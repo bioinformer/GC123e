@@ -1,0 +1,56 @@
+(Call=BioInfo-Help_+917995158734) bioinformaticsharma@bioinformaticsharma-CNBIC-EAN1:~/BDGC/GCEVOBASE$ bash DWLGC.sh
+--2021-07-18 00:42:19--  http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_release_88.GCevobase.pc.download.GC4d.txt.gz
+Resolving www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)... 34.212.103.43
+Connecting to www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)|34.212.103.43|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 58038231 (55M) [application/x-gzip]
+Saving to: ‘Ensembl_release_88.GCevobase.pc.download.GC4d.txt.gz’
+
+Ensembl_release_88.GCevobase.pc.download.GC4d.txt. 100%[===============================================================================================================>]  55.35M   107KB/s    in 19m 36s
+
+2021-07-18 01:01:56 (48.2 KB/s) - ‘Ensembl_release_88.GCevobase.pc.download.GC4d.txt.gz’ saved [58038231/58038231]
+
+--2021-07-18 01:01:56--  http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt.gz
+Resolving www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)... 34.212.103.43
+Connecting to www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)|34.212.103.43|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 30680334 (29M) [application/x-gzip]
+Saving to: ‘Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt.gz’
+
+Ensembl_Metazoa_release_35.GCevobase.pc.download.G 100%[===============================================================================================================>]  29.26M  61.6KB/s    in 10m 17s
+
+2021-07-18 01:12:14 (48.6 KB/s) - ‘Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt.gz’ saved [30680334/30680334]
+
+--2021-07-18 01:12:14--  http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt.gz
+Resolving www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)... 34.212.103.43
+Connecting to www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)|34.212.103.43|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 45994737 (44M) [application/x-gzip]
+Saving to: ‘Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt.gz’
+
+Ensembl_Plants_release_35.GCevobase.pc.fix.downloa 100%[===============================================================================================================>]  43.86M  55.0KB/s    in 15m 43s
+
+2021-07-18 01:27:57 (47.6 KB/s) - ‘Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt.gz’ saved [45994737/45994737]
+
+--2021-07-18 01:27:57--  http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt.gz
+Resolving www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)... 34.212.103.43
+Connecting to www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)|34.212.103.43|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 154238504 (147M) [application/x-gzip]
+Saving to: ‘Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt.gz’
+
+Ensembl_Fungi_release_35.GCevobase.pc.download.GC4 100%[===============================================================================================================>] 147.09M  65.4KB/s    in 54m 19s
+
+2021-07-18 02:22:17 (46.2 KB/s) - ‘Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt.gz’ saved [154238504/154238504]
+
+--2021-07-18 02:22:17--  http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt.gz
+Resolving www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)... 34.212.103.43
+Connecting to www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)|34.212.103.43|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 46321942 (44M) [application/x-gzip]
+Saving to: ‘Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt.gz’
+
+Ensembl_Protists_release_35.GCevobase.pc.download. 100%[===============================================================================================================>]  44.18M  50.4KB/s    in 16m 41s
+
+2021-07-18 02:38:59 (45.2 KB/s) - ‘Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt.gz’ saved [46321942/46321942]
+
