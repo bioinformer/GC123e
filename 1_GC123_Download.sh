@@ -9,3 +9,10 @@ wget -c http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Pla
 wget -c http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt.gz
 
 wget -c http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt.gz
+
+
+# To RUN this Script, implement the 2 Commands below, preferably on Ubuntu 20.04 LTS Desktop Terminal ( $ is Shell-prompt, must be excluded).
+
+# $ chmod a+x 1_GC123_Download.sh
+
+# $ bash 1_GC123_Download.sh
