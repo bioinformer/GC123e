@@ -14,8 +14,8 @@ gunzip --keep Ensembl_release_88.GCevobase.pc.download.GC4d.txt.gz
 
 # ( $ is Shell-prompt; and # is Comment-prefix, Both must be excluded).
  
-# $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/1_GC123_Download.sh
+# $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/3_Extract_GC123_files.sh
 
-# $ chmod a+x 1_GC123_Download.sh
+# $ chmod a+x 3_Extract_GC123_files.sh
 
-# $ bash 1_GC123_Download.sh
+# $ bash 3_Extract_GC123_files.sh
