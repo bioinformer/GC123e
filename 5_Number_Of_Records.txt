@@ -1,0 +1,28 @@
+#!/bin/bash
+
+$ pwd
+/home/GCevoBase
+
+$ cd block3entropy
+
+$ ls ./*/*.txt -lha
+-rw-rw-r-- 1 bioinformaticsharma bioinformaticsharma 612M Jul 25 23:48 ./fungi/Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt
+-rw-rw-r-- 1 bioinformaticsharma bioinformaticsharma 114M Jul 25 23:48 ./metazoa/Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt
+-rw-rw-r-- 1 bioinformaticsharma bioinformaticsharma 171M Jul 25 23:48 ./plants/Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt
+-rw-rw-r-- 1 bioinformaticsharma bioinformaticsharma 177M Jul 25 23:48 ./protists/Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt
+-rw-rw-r-- 1 bioinformaticsharma bioinformaticsharma 232M Jul 25 23:48 ./release/Ensembl_release_88.GCevobase.pc.download.GC4d.txt
+
+$ wc -l ./*/*.txt
+   6783328 ./fungi/Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt
+   1364949 ./metazoa/Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt
+   1917119 ./plants/Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt
+   2024436 ./protists/Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt
+   2360030 ./release/Ensembl_release_88.GCevobase.pc.download.GC4d.txt
+  14449862 total
+  
+  cd .. 
+  
+  # Above are Reproducible CLI scripts on Linux. These metrics can be directly verified after running Scripts 1_ & 2_ on this GitHub repo.
+  
+
+
