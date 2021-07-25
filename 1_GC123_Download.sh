@@ -15,7 +15,7 @@ wget -c http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Pro
 
 # ( $ is Shell-prompt; and # is Comment-prefix, Both must be excluded).
  
-# $ wget -c 
+# $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/1_GC123_Download.sh
 
 # $ chmod a+x 1_GC123_Download.sh
 
