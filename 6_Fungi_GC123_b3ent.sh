@@ -21,6 +21,15 @@ cat fungi_4.txt | awk '{$13 = ($5+$6+$7+$8+$9+$10+$11+$12); print $0}' | tee fun
 
 cd ../../../GCevoBase/
 
+# To RUN this Script, implement the 2 Commands below, preferably on Ubuntu 20.04 LTS Desktop Terminal 
+
+# ( $ is Shell-prompt; and # is Comment-prefix, Both must be excluded).
+ 
+# $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/4_Ouput_Directories.sh
+
+# $ chmod a+x 6_Fungi_GC123_b3ent.sh
+
+# $ bash 6_Fungi_GC123_b3ent.sh
 
 
 
