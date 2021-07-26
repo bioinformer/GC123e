@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir -pGCevoBase
+mkdir -p GCevoBase
 cd GCevoBase
 
 wget -c http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_release_88.GCevobase.pc.download.GC4d.txt.gz
