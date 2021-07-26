@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd GCevoBase
+
 # Check that Current/ Present working Directory is "GCevoBase"
 # $ pwd
 # ~/path/to/GCevoBase
