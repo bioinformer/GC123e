@@ -15,6 +15,8 @@ http://www.nextgenbioinformatics.org/GCevobase/
 
 # Run the TCBShE pipeline Yourself!
 ```
+# Please Exclude "$" in CLI: Command Line Interface, it is just the Shell-prompt.
+
 $ git clone https://github.com/bioinformer/GC123e.git
 Cloning into 'GC123e'...
 remote: Enumerating objects: 271, done.
@@ -25,7 +27,8 @@ Receiving objects: 100% (271/271), 74.25 KiB | 1.95 MiB/s, done.
 Resolving deltas: 100% (146/146), done.
 
 $ cd GC123e/
-$ 
+$ chmod a+x 0_TCBShE_Run_PipeLine.sh 
+$ bash 0_TCBShE_Run_PipeLine.sh 
 ```
 
 ## Run the 9d "Rscript" One Line at a Time, exclude '>' Prompt
