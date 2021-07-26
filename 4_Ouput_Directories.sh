@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd GCevoBase
+
 # Check that Current/ Present working Directory is "GCevoBase"
 # $ pwd
 # ~/path/to/GCevoBase
@@ -21,6 +23,8 @@ cp Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt ./block3entropy/
 cp Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt ./block3entropy/protists
 
 cp Ensembl_release_88.GCevobase.pc.download.GC4d.txt ./block3entropy/release
+
+cd ..
 
 # To RUN this Script, implement the 2 Commands below, preferably on Ubuntu 20.04 LTS Desktop Terminal 
 
