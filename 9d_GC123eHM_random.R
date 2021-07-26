@@ -1,4 +1,4 @@
-$ R # In "pwd" as ./GCevoBase/blockentropy
+$ R # In "pwd" as ./GCevoBase/block3entropy
 
 R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
 Copyright (C) 2021 The R Foundation for Statistical Computing
