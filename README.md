@@ -14,6 +14,7 @@ http://www.nextgenbioinformatics.org/GCevobase/
 1st Author's Self-Citations in this Context and IEEE-Information Theory Society Profile of the Ongoing work= https://www.itsoc.org/profile/9590
 
 # Run the TCBShE pipeline Yourself!
+## Run the 9d "Rscript" One Line at a Time, exclude '>' Prompt
 NOTE: In the Classic Example outlined in Youtube video above, Overall Triplet-Block Entropy= 2.45 > (3 X 0.81 = 2.43). Hence what we calculated is an Over-estimate.
 Similarly, this leads to our Bold Hypothesis that Actual/ Expected TCBShE after Error-correction= 
 (e/3)*3 = NAPIER's constant (Upto 5 Decimal Places)= 2.71828 , which is what is the EXACT estimate.
