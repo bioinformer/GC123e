@@ -14,6 +14,18 @@ http://www.nextgenbioinformatics.org/GCevobase/
 1st Author's Self-Citations in this Context and IEEE-Information Theory Society Profile of the Ongoing work= https://www.itsoc.org/profile/9590
 
 # Run the TCBShE pipeline Yourself!
+$ git clone https://github.com/bioinformer/GC123e.git
+Cloning into 'GC123e'...
+remote: Enumerating objects: 271, done.
+remote: Counting objects: 100% (271/271), done.
+remote: Compressing objects: 100% (268/268), done.
+remote: Total 271 (delta 146), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (271/271), 74.25 KiB | 1.95 MiB/s, done.
+Resolving deltas: 100% (146/146), done.
+
+$ cd GC123e/
+$ 
+
 ## Run the 9d "Rscript" One Line at a Time, exclude '>' Prompt
 NOTE: In the Classic Example outlined in Youtube video above, Overall Triplet-Block Entropy= 2.45 > (3 X 0.81 = 2.43). Hence what we calculated is an Over-estimate.
 Similarly, this leads to our Bold Hypothesis that Actual/ Expected TCBShE after Error-correction= 
