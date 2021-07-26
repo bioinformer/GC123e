@@ -6,6 +6,8 @@
 
 cd block3entropy
 
+# Extract the LAST column, which is the Overall Triplet Block Shannon Entropy of Codons wrt GC-1,GC-2,GC-3 of All the 5 Clades across 1118 Species.
+
 cat ./fungi/fungi_5.txt | awk '{print $13}' | tee fungi.txt
 
 cat ./metazoa/metazoa_5.txt | awk '{print $13}' | tee metazoa.txt
@@ -22,7 +24,7 @@ cd ..
 
 # ( $ is Shell-prompt; and # is Comment-prefix, Both must be excluded).
  
-# $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/9b_Release_GC123_b3ent.sh
+# $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/9c_COLonize_BlockEntropy.sh
 
 # $ chmod a+x 9c_COLonize_BlockEntropy.sh
 
