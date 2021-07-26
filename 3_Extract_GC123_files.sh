@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Check that Current/ Present working Directory is "GCevoBase"
+# $ pwd
+# ~/path/to/GCevoBase
+
 gunzip --keep Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt.gz
 
 gunzip --keep Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt.gz
