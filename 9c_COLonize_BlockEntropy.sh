@@ -18,6 +18,14 @@ cat ./protists/protists_5.txt | awk '{print $13}' | tee protists.txt
 
 cat ./release/release_5.txt | awk '{print $13}' | tee release.txt
 
+# $ wc -l *.txt
+  # 6783327 fungi.txt
+  # 1364948 metazoa.txt
+  # 1917118 plants.txt
+  # 2024435 protists.txt
+  # 2360029 release.txt
+  # 14449857 total
+
 cd ..
 
 # To RUN this Script, implement the 2 Commands below, preferably on Ubuntu 20.04 LTS Desktop Terminal 
