@@ -16,10 +16,17 @@ cat ./protists/protists_5.txt | awk '{print $13}' | tee protists.txt
 
 cat ./release/release_5.txt | awk '{print $13}' | tee release.txt
 
+cd ..
 
+# To RUN this Script, implement the 2 Commands below, preferably on Ubuntu 20.04 LTS Desktop Terminal 
 
+# ( $ is Shell-prompt; and # is Comment-prefix, Both must be excluded).
+ 
+# $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/9b_Release_GC123_b3ent.sh
 
+# $ chmod a+x 9c_COLonize_BlockEntropy.sh
 
+# $ bash 9c_COLonize_BlockEntropy.sh
 
 
 
