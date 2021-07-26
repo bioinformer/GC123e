@@ -5,6 +5,11 @@ https://mathworld.wolfram.com/e.html
 
 Significance of HM: Harmonic Mean of a Set of Entropy values: It is a Dimensionless Quantity; being the Ratio of "Mutual Information to the Complement of Normalized Variation of Information" ( Reference Link= https://stats.stackexchange.com/questions/393386/why-not-normalizing-mutual-information-with-harmonic-mean-of-entropies )
 
+An Explanation of Triplet-Block Entropy concept using Coin-Toss with Probability(P) of Heads(H) = (1/4) and P of Tails(T) = (3/4) with 2^3=8 Binary states 0=H,1=T.
+https://youtu.be/B3dVuP0Kzg0
+
 BASE-paper for this Work (Source of GC-1% , GC-2% , GC-3% Datasets):= Dapeng Wang, GCevobase: an evolution-based database for GC content in eukaryotic genomes, Bioinformatics, Volume 34, Issue 12, 15 June 2018, Pages 2129–2131, https://doi.org/10.1093/bioinformatics/bty068 http://www.nextgenbioinformatics.org/GCevobase/
 
 1st Author's Self-Citations in this Context and IEEE-Information Theory Society Profile of the Ongoing work= https://www.itsoc.org/profile/9590
+
+# Run the TCBShE pipeline Yourself!
