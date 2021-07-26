@@ -25,8 +25,8 @@ cd ../../../GCevoBase/
 
 # ( $ is Shell-prompt; and # is Comment-prefix, Both must be excluded).
  
-# $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/8_Plants_GC123_b3ent.sh
+# $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/9a_Protists_GC123_b3ent.sh
 
-# $ chmod a+x 8_Plants_GC123_b3ent.sh
+# $ chmod a+x 9a_Protists_GC123_b3ent.sh
 
-# $ bash 8_Plants_GC123_b3ent.sh
+# $ bash 9a_Protists_GC123_b3ent.sh
