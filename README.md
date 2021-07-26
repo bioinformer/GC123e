@@ -13,9 +13,8 @@ http://www.nextgenbioinformatics.org/GCevobase/
 
 1st Author's Self-Citations in this Context and IEEE-Information Theory Society Profile of the Ongoing work= https://www.itsoc.org/profile/9590
 
-# Run the TCBShE pipeline Yourself!
+# Run the TCBShE pipeline Yourself! Please Exclude "$" in CLI: Command Line Interface, it is just the Shell-prompt.
 ```
-# Please Exclude "$" in CLI: Command Line Interface, it is just the Shell-prompt.
 
 $ git clone https://github.com/bioinformer/GC123e.git
 Cloning into 'GC123e'...
