@@ -1,4 +1,4 @@
-#!/bin/bash1
+#!/bin/bash
 
 # Check that Current/ Present working Directory is "GCevoBase"
 # $ pwd
