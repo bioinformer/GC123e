@@ -1,4 +1,4 @@
-#!/bin/bash1
+#!/bin/bash
 
 cd block3entropy/fungi
 
