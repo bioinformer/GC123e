@@ -24,6 +24,10 @@ cd ../../../GCevoBase/
 # To RUN this Script, implement the 2 Commands below, preferably on Ubuntu 20.04 LTS Desktop Terminal 
 
 # ( $ is Shell-prompt; and # is Comment-prefix, Both must be excluded).
+
+# Check that Current/ Present working Directory is "GCevoBase"
+# $ pwd
+# ~/path/to/GCevoBase
  
 # $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/6_Fungi_GC123_b3ent.sh
 
