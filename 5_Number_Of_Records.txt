@@ -1,4 +1,4 @@
-$ pwd
+$ pwd1
 /home/GCevoBase
 
 $ cd block3entropy
