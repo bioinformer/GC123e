@@ -1,4 +1,4 @@
-#(Call=BioInfo-Help_+917995158734) bioinformaticsharma@bioinformaticsharma-CNBIC-EAN1:~/BDGC/GCEVOBASE$ bash DWLGC.sh
+(Call=BioInfo-Help_+917995158734) bioinformaticsharma@bioinformaticsharma-CNBIC-EAN1:~/BDGC/GCEVOBASE$ bash DWLGC.sh
 --2021-07-18 00:42:19--  http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_release_88.GCevobase.pc.download.GC4d.txt.gz
 Resolving www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)... 34.212.103.43
 Connecting to www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)|34.212.103.43|:80... connected.
