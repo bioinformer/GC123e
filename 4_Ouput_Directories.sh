@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Check that Current/ Present working Directory is "GCevoBase"
+# $ pwd
+# ~/path/to/GCevoBase
+
 mkdir -p block3entropy
 
 cd block3entropy
