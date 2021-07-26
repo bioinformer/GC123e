@@ -15,4 +15,5 @@ http://www.nextgenbioinformatics.org/GCevobase/
 
 # Run the TCBShE pipeline Yourself!
 NOTE: In the Classic Example outlined in Youtube video above, Overall Triplet-Block Entropy= 2.45 > (3 X 0.81 = 2.43). Hence what we calculated is an Over-estimate.
-Similarly, this leads to our Bold Hypothesis that Actual/ Expected TCBShE after Error-correction= (e/3)*3 = 2.71828 , which is what is the EXACT estimate.
+Similarly, this leads to our Bold Hypothesis that Actual/ Expected TCBShE after Error-correction= 
+(e/3)*3 = 2.71828 , which is what is the EXACT estimate.
