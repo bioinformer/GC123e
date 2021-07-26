@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash1
 
 cd block3entropy/protists
 
