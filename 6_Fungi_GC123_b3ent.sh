@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd GCevoBase
+
 cd block3entropy/fungi
 
 # ITERATION-1: Extract only GC1% , GC2% , GC3% and Exclude header-Line.
