@@ -21,7 +21,7 @@ cat fungi_3.txt | awk '{ for (i = 5; i <= 12; ++i) { $i = -($i)*(log($i)/log(2))
 # ITERATION-5: Add-up All the Entropies to obtain Block Shannon Entropy as per the Summation-definition of Entropy.
 cat fungi_4.txt | awk '{$13 = ($5+$6+$7+$8+$9+$10+$11+$12); print $0}' | tee fungi_5.txt
 
-cd ../../../GCevoBase/
+cd ../../
 
 # To RUN this Script, implement the 2 Commands below, preferably on Ubuntu 20.04 LTS Desktop Terminal 
 
@@ -36,21 +36,3 @@ cd ../../../GCevoBase/
 # $ chmod a+x 6_Fungi_GC123_b3ent.sh
 
 # $ bash 6_Fungi_GC123_b3ent.sh
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
