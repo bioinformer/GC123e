@@ -2,7 +2,7 @@
 
 # Check that Current/ Present working Directory is "GCevoBase"
 # $ pwd
-# ~/path/to/GCevoBase
+# ~/path/to/GC123e
 
 gunzip --keep Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt.gz ;
 
