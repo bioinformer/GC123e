@@ -21,7 +21,7 @@ cat fungi_4.txt | awk '{$13 = ($5+$6+$7+$8+$9+$10+$11+$12); print $0}' | tee fun
 
 # ( $ is Shell-prompt; and # is Comment-prefix, Both must be excluded).
 
-# Check that Current/ Present working Directory is "GCevoBase"
+# Check that Current/ Present working Directory is "GC123e"
 # $ pwd
 # ~/path/to/GC132e
  
