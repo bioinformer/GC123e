@@ -8,15 +8,20 @@
 # Here , hdr.txt is a Single-Row 2-Columns file, consisting of the TAB-delimited Content ,
 # Species TCBShE
 
-cat hdr.txt fungi_5.txt | awk '{print $1"\t"$13}' | tee fungi.txt
+cat fungi_5.txt | awk '{print $1"\t"$13}' | tee fungi_6.txt
+cat hdr.txt fungi_6.txt | tee fungi_7.txt
 
-cat hdr.txt metazoa_5.txt | awk '{print $1"\t"$13}' | tee metazoa.txt
+cat metazoa_5.txt | awk '{print $1"\t"$13}' | tee metazoa_6.txt
+cat hdr.txt metazoa_6.txt | tee metazoa_7.txt
 
-cat hdr.txt plants_5.txt | awk '{print $1"\t"$13}' | tee plants.txt
+cat plants_5.txt | awk '{print $1"\t"$13}' | tee plants_6.txt
+cat hdr.txt plants_6.txt | tee plants_7.txt
 
-cat hdr.txt protists_5.txt | awk '{print $1"\t"$13}' | tee protists.txt
+cat protists_5.txt | awk '{print $1"\t"$13}' | tee protists_6.txt
+cat hdr.txt protists_6.txt | tee protists_7.txt
 
 cat hdr.txt release_5.txt | awk '{print $1"\t"$13}' | tee release.txt
+cat hdr.txt release_6.txt | tee release_7.txt
 
 # $ wc -l *.txt
   # 6783327 fungi.txt
@@ -35,6 +40,3 @@ cat hdr.txt release_5.txt | awk '{print $1"\t"$13}' | tee release.txt
 # $ chmod a+x 9c_COLonize_BlockEntropy.sh
 
 # $ bash 9c_COLonize_BlockEntropy.sh
-
-
-
