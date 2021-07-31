@@ -3,15 +3,15 @@
 chmod a+x 1_GC123_Download.sh ;
 bash 1_GC123_Download.sh ;
 
-sleep 10 ;
+sleep 5;
 
 chmod a+x 3_Extract_GC123_files.sh ;
 bash 3_Extract_GC123_files.sh ;
 
-sleep 10 ;
+sleep 5 ;
 
-chmod a+x 4_Ouput_Directories.sh ;
-bash 4_Ouput_Directories.sh ;
+chmod a+x 4_Local_Copies_input.sh  ;
+bash 4_Local_Copies_input.sh  ;
 
 sleep 5 ;
 
@@ -33,7 +33,7 @@ sleep 5 ;
 chmod a+x 9a_Protists_GC123_b3ent.sh ;
 bash 9a_Protists_GC123_b3ent.sh ;
 
-sleep 10 ;
+sleep 5 ;
 
 chmod a+x 9b_Release_GC123_b3ent.sh ;
 bash 9b_Release_GC123_b3ent.sh ;
