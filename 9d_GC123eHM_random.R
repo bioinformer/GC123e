@@ -84,4 +84,3 @@ Type 'q()' to quit R.
 > 1/(mean(1/(data[sample(nrow(release),5000),])))
 [1] 2.846513
 
-
