@@ -13,8 +13,6 @@ wget -c http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Fun
 
 wget -c http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt.gz
 
-cd ..
-
 # To RUN this Script, implement the 2 Commands below, preferably on Ubuntu 20.04 LTS Desktop Terminal 
 
 # ( $ is Shell-prompt; and # is Comment-prefix, Both must be excluded).
