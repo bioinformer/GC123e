@@ -22,7 +22,7 @@ cat hdr.txt plants_6.txt | tee plants_7.txt ;
 cat protists_5.txt | awk '{print $1"\t"$13}' | tee protists_6.txt ;
 cat hdr.txt protists_6.txt | tee protists_7.txt ;
 
-cat hdr.txt release_5.txt | awk '{print $1"\t"$13}' | tee release.txt ;
+cat release_5.txt | awk '{print $1"\t"$13}' | tee release_6.txt ;
 cat hdr.txt release_6.txt | tee release_7.txt ;
 
 # $ wc -l *.txt
