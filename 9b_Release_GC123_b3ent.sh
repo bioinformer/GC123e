@@ -23,7 +23,7 @@ cat release_4.txt | awk '{$13 = ($5+$6+$7+$8+$9+$10+$11+$12); print $0}' | tee r
 
 # Check that Current/ Present working Directory is "GCevoBase"
 # $ pwd
-# ~/path/to/GCevoBase
+# ~/path/to/GC123e
  
 # $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/9b_Release_GC123_b3ent.sh
 
