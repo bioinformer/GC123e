@@ -34,3 +34,6 @@ $ bash 0_TCBShE_Run_PipeLine.sh
 NOTE: In the Classic Example outlined in Youtube video above, Overall Triplet-Block Entropy= 2.45 > (3 X 0.81 = 2.43). Hence what we calculated is an Over-estimate.
 Similarly, this leads to our Bold Hypothesis that Actual/ Expected TCBShE after Error-correction= 
 (e/3)*3 = NAPIER's constant (Upto 5 Decimal Places)= 2.71828 , which is what is the EXACT estimate.
+
+# If you wish to Peruse this Work, and its further Developments on GitHub (GC123e), please Cite:-
+Praharshit Sharma, & Kuralayanapalya Puttahonnappa Suresh. (2021). Source-Code: TCBShE [Triplet Codon Block Shannon Entropy] in terms of GC(1,2,3)% Harmonically Averages approximating to Napier's Constant: a Comprehensive Survey across ~14.45 million Transcripts Grouped-by 1118 Species (v-2.71828). Zenodo. https://doi.org/10.5281/zenodo.5137183
