@@ -14,7 +14,7 @@ wget -c http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Pro
 
 # ( $ is Shell-prompt; and # is Comment-prefix, Both must be excluded).
 
-# Check that Current/ Present working Directory is "GCevoBase"
+# Check that Current/ Present working Directory is "GCe123e"
 # $ pwd
 # ~/path/to/GC123e
  
