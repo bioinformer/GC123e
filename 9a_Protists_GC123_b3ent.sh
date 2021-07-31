@@ -23,7 +23,7 @@ cat protists_4.txt | awk '{$13 = ($5+$6+$7+$8+$9+$10+$11+$12); print $0}' | tee 
 
 # Check that Current/ Present working Directory is "GCevoBase"
 # $ pwd
-# ~/path/to/GCevoBase
+# ~/path/to/GC123e
  
 # $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/9a_Protists_GC123_b3ent.sh
 
