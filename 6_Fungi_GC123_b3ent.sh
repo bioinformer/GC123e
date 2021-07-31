@@ -23,7 +23,7 @@ cat fungi_4.txt | awk '{$13 = ($5+$6+$7+$8+$9+$10+$11+$12); print $0}' | tee fun
 
 # Check that Current/ Present working Directory is "GCevoBase"
 # $ pwd
-# ~/path/to/GCevoBase
+# ~/path/to/GC132e
  
 # $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/6_Fungi_GC123_b3ent.sh
 
