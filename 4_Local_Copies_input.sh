@@ -18,8 +18,8 @@ cp Ensembl_release_88.GCevobase.pc.download.GC4d.txt release_0.txt ;
 
 # ( $ is Shell-prompt; and # is Comment-prefix, Both must be excluded).
  
-# $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/4_Ouput_Directories.sh
+# $ wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/4_Local_Copies_input.sh
 
-# $ chmod a+x 4_Ouput_Directories.sh
+# $ chmod a+x 4_Local_Copies_input.sh
 
-# $ bash 4_Ouput_Directories.sh
+# $ bash 4_Local_Copies_input.sh
