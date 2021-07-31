@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Check that Current/ Present working Directory is "GCevoBase"
+# Check that Current/ Present working Directory is "GC123e"
 # $ pwd
 # ~/path/to/GC123e
 
