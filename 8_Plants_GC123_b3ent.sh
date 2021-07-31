@@ -1,7 +1,7 @@
 #!/bin/bash1
 
 # ITERATION-1: Extract only GC1% , GC2% , GC3% and Exclude header-Line.
-cat Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt | awk '{print $1,$7,$8,$9}' | grep -v "species_name" | tee plants_1.txt ;
+cat plants_0.txt | awk '{print $1,$7,$8,$9}' | grep -v "species_name" | tee plants_1.txt ;
 
 # ITERATION-2: Normalize the GC1% , GC2% , GC3% (percentage Values) to [0,1] inBetween RANGE, by dividing by 100 each
 cat plants_1.txt | awk '{$2 = ($2/100); $3 = ($3/100); $4 = ($4/100); print $0}' | tee plants_2.txt ;
