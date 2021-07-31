@@ -1,30 +1,18 @@
 #!/bin/bash
 
-cd GCevoBase
-
 # Check that Current/ Present working Directory is "GCevoBase"
 # $ pwd
 # ~/path/to/GCevoBase
 
-mkdir -p block3entropy
+cp Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt fungi_0.txt ;
 
-cd block3entropy
+cp Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt metazoa_0.txt ;
 
-mkdir -p fungi metazoa plants protists release
+cp Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt plants_0.txt ;
 
-cd ..
+cp Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt protists_0.txt ;
 
-cp Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt ./block3entropy/fungi
-
-cp Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt ./block3entropy/metazoa
-
-cp Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt ./block3entropy/plants
-
-cp Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt ./block3entropy/protists
-
-cp Ensembl_release_88.GCevobase.pc.download.GC4d.txt ./block3entropy/release
-
-cd ..
+cp Ensembl_release_88.GCevobase.pc.download.GC4d.txt release_0.txt ;
 
 # To RUN this Script, implement the 2 Commands below, preferably on Ubuntu 20.04 LTS Desktop Terminal 
 
