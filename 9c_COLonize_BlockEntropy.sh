@@ -2,7 +2,7 @@
 
 # Check that Current/ Present working Directory is "GCevoBase"
 # $ pwd
-# ~/path/to/GCevoBase
+# ~/path/to/GC123e
 
 # Extract the LAST column, which is the Overall Triplet Block Shannon Entropy of Codons wrt GC-1,GC-2,GC-3 of All the 5 Clades across 1118 Species.
 # Here , hdr.txt is a Single-Row 2-Columns file, consisting of the TAB-delimited Content ,
