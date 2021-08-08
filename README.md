@@ -1,4 +1,4 @@
-# GC123eHM
+# GC123eHM_k
 TCBShE= Triplet Codon Block Shannon Entropy in terms of GC(1,2,3)% equates to Napier’s Constant for Model Organisms, and Harmonically Averages to Same Approximately: a Penta-Clado-genic Quantitative Survey across ~14.45 million Transcripts Grouped-by 1118 Species
 
 https://mathworld.wolfram.com/e.html
