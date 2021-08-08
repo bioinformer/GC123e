@@ -1,11 +1,11 @@
 # GC123eHM
-Random Sampling of TCBShE: Triplet Codon Block Shannon Entropy in terms of GC(1,2,3)% Harmonically Averages approximating to Napier's Constant: a Comprehensive Survey across 1118 Species
+TCBShE= Triplet Codon Block Shannon Entropy in terms of GC(1,2,3)% equates to Napier’s Constant for Model Organisms, and Harmonically Averages to Same Approximately: a Penta-Clado-genic Quantitative Survey across ~14.45 million Transcripts Grouped-by 1118 Species
 
 https://mathworld.wolfram.com/e.html
 
 Significance of HM: Harmonic Mean of a Set of Entropy values: It can be Expressed as; the Ratio of "Mutual Information to the Complement of Normalized Variation of Information" ( Reference Link= https://stats.stackexchange.com/questions/393386/why-not-normalizing-mutual-information-with-harmonic-mean-of-entropies )
 
-An Explanation of Triplet-Block Entropy concept using Coin-Toss with Probability(P) of Heads(H) = (1/4) and P of Tails(T) = (3/4) with 2^3=8 Binary states 0=H,1=T.
+An Explanation of Triplet-Block Entropy concept using "Biased" Coin-Toss with Probability(P) of Heads(H) = (1/4) and P of Tails(T) = (3/4) with 2^3=8 Binary states 0=H,1=T. 
 https://youtu.be/B3dVuP0Kzg0
 
 BASE-paper for this Work (Source of GC-1% , GC-2% , GC-3% Datasets):= Dapeng Wang, GCevobase: an evolution-based database for GC content in eukaryotic genomes, Bioinformatics, Volume 34, Issue 12, 15 June 2018, Pages 2129–2131, https://doi.org/10.1093/bioinformatics/bty068 AND 
