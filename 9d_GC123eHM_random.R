@@ -64,6 +64,7 @@ Type 'q()' to quit R.
 > if (!require("pacman")) install.packages("pacman") 
 Loading required package: pacman 
 > pacman::p_load(psych, dplyr) 
+
 > library(psych)
 
 > fungi_all <- read.table("fungi_7.txt", header = TRUE) 
@@ -78,6 +79,25 @@ Loading required package: pacman
 > harmonic.mean(metazoa_all$TCBShE) 
 [1] 2.836593
 
+> plants_all <- read.table("plants_7.txt", header = TRUE)
+> nrow(plants_all)
+[1] 1917118
+> harmonic.mean(plants_all$TCBShE)
+[1] 2.821708
+
+> protists_all <- read.table("protists_7.txt", header = TRUE)
+> nrow(protists_all)
+[1] 2024435
+> harmonic.mean(protists_all$TCBShE)
+[1] 2.716689
+
+> vertebra_all <- read.table("release_7.txt", header = TRUE)
+> nrow(vertebra_all)
+[1] 2360029
+> harmonic.mean(vertebra_all$TCBShE)
+[1] 2.847058
+
+> library(dplyr)
 
 
 
