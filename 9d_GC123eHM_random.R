@@ -98,8 +98,1162 @@ Loading required package: pacman
 [1] 2.847058
 
 > library(dplyr)
+> fungi_all <- read.table("fungi_7.txt", header = TRUE)
+> fg_Cluster <- fungi_all %>% group_by(Species)
+> fg735 <- fg_Cluster %>% summarise(TCBShE = harmonic.mean(TCBShE)) %>% print(n = Inf)
+# A tibble: 735 x 2
+    Species                                                    TCBShE
+    <chr>                                                       <dbl>
+  1 _candida_auris                                               2.90
+  2 _candida_glabrata                                            2.87
+  3 _candida_glabrata_gca_001466525                              2.86
+  4 _candida_glabrata_gca_001466535                              2.86
+  5 _candida_glabrata_gca_001466565                              2.86
+  6 _candida_glabrata_gca_001466575                              2.86
+  7 _candida_glabrata_gca_001466635                              2.86
+  8 _candida_glabrata_gca_001466685                              2.87
+  9 _candida_tenuis_atcc_10573                                   2.90
+ 10 Absidia_glauca                                               2.95
+ 11 Acidomyces_richmondensis                                     2.92
+ 12 Acidomyces_richmondensis_bfw                                 2.93
+ 13 Acremonium_chrysogenum_atcc_11550                            2.72
+ 14 Agaricus_bisporus_var_bisporus_h97                           2.95
+ 15 Agaricus_bisporus_var_burnettii_jb137_s8                     2.95
+ 16 Allomyces_macrogynus_atcc_38327                              2.61
+ 17 Alternaria_alternata                                         2.93
+ 18 Amanita_muscaria_koide_bx008                                 2.96
+ 19 Anncaliia_algerae_pra109                                     2.50
+ 20 Anncaliia_algerae_pra339                                     2.49
+ 21 Anthracocystis_flocculosa_pf_1                               2.52
+ 22 Arthrobotrys_oligospora_atcc_24927                           2.96
+ 23 Arthroderma_benhamiae_cbs_112371                             2.93
+ 24 Arthroderma_otae_cbs_113480                                  2.94
+ 25 Aschersonia_aleyrodis_rcef_2490                              2.83
+ 26 Ascochyta_rabiei                                             2.84
+ 27 Ascoidea_rubescens_dsm_1968                                  2.70
+ 28 Ascosphaera_apis_arsef_7405                                  2.95
+ 29 Ashbya_gossypii                                              2.77
+ 30 Aspergillus_calidoustus                                      2.90
+ 31 Aspergillus_clavatus                                         2.86
+ 32 Aspergillus_cristatus                                        2.91
+ 33 Aspergillus_flavus                                           2.94
+ 34 Aspergillus_flavus_af70                                      2.94
+ 35 Aspergillus_fumigatus                                        2.91
+ 36 Aspergillus_fumigatus_var_rp_2014                            2.90
+ 37 Aspergillus_fumigatus_z5                                     2.90
+ 38 Aspergillus_fumigatusa1163                                   2.91
+ 39 Aspergillus_lentulus                                         2.90
+ 40 Aspergillus_luchuensis                                       2.91
+ 41 Aspergillus_nidulans                                         2.92
+ 42 Aspergillus_nidulans_fgsc_a4                                 2.93
+ 43 Aspergillus_niger                                            2.92
+ 44 Aspergillus_niger_atcc_1015                                  2.90
+ 45 Aspergillus_niger_gca_001515345                              2.90
+ 46 Aspergillus_nomius_nrrl_13137                                2.93
+ 47 Aspergillus_ochraceoroseus                                   2.92
+ 48 Aspergillus_oryzae                                           2.94
+ 49 Aspergillus_oryzae_100_8                                     2.94
+ 50 Aspergillus_oryzae_3_042                                     2.94
+ 51 Aspergillus_parasiticus_su_1                                 2.93
+ 52 Aspergillus_rambellii                                        2.92
+ 53 Aspergillus_ruber_cbs_135680                                 2.93
+ 54 Aspergillus_terreus                                          2.83
+ 55 Aspergillus_udagawae                                         2.90
+ 56 Aspergillus_ustus                                            2.88
+ 57 Aureobasidium_melanogenum_cbs_110374                         2.93
+ 58 Aureobasidium_namibiae_cbs_147_97                            2.92
+ 59 Aureobasidium_pullulans_exf_150                              2.93
+ 60 Aureobasidium_subglaciale_exf_2481                           2.93
+ 61 Babjeviella_inositovora_nrrl_y_12698                         2.87
+ 62 Batrachochytrium_dendrobatidis_jam81                         2.89
+ 63 Batrachochytrium_dendrobatidis_jel423                        2.88
+ 64 Baudoinia_panamericana_uamh_10762                            2.89
+ 65 Beauveria_bassiana_arsef_2860                                2.82
+ 66 Beauveria_bassiana_d1_5                                      2.81
+ 67 Bipolaris_maydis_atcc_48331                                  2.92
+ 68 Bipolaris_maydis_c5                                          2.92
+ 69 Bipolaris_oryzae_atcc_44560                                  2.92
+ 70 Bipolaris_sorokiniana_nd90pr                                 2.92
+ 71 Bipolaris_victoriae_fi3                                      2.92
+ 72 Bipolaris_zeicola_26_r_13                                    2.92
+ 73 Blastomyces_dermatitidis_atcc_18188                          2.92
+ 74 Blastomyces_dermatitidis_atcc_26199                          2.94
+ 75 Blastomyces_dermatitidis_er_3                                2.94
+ 76 Blastomyces_gilchristii_slh14081                             2.93
+ 77 Blumeria_graminis                                            2.93
+ 78 Blumeria_graminis_f_sp_tritici_96224                         2.93
+ 79 Botryobasidium_botryosum_fd_172_ss1                          2.90
+ 80 Botrytis_cinerea                                             2.95
+ 81 Botrytis_cinerea_bcdw1                                       2.95
+ 82 Botrytis_cinerea_t4                                          2.94
+ 83 Brettanomyces_bruxellensis_awri1499                          2.88
+ 84 Byssochlamys_spectabilis_no_5                                2.93
+ 85 Calocera_cornea_hhb12733                                     2.76
+ 86 Calocera_viscosa_tufc12733                                   2.80
+ 87 Candida_albicans_12c                                         2.71
+ 88 Candida_albicans_19f                                         2.71
+ 89 Candida_albicans_ca6                                         2.71
+ 90 Candida_albicans_gc75                                        2.71
+ 91 Candida_albicans_l26                                         2.71
+ 92 Candida_albicans_p34048                                      2.71
+ 93 Candida_albicans_p37005                                      2.71
+ 94 Candida_albicans_p37037                                      2.71
+ 95 Candida_albicans_p37039                                      2.71
+ 96 Candida_albicans_p57055                                      2.71
+ 97 Candida_albicans_p57072                                      2.71
+ 98 Candida_albicans_p60002                                      2.71
+ 99 Candida_albicans_p75010                                      2.71
+100 Candida_albicans_p75016                                      2.71
+101 Candida_albicans_p75063                                      2.71
+102 Candida_albicans_p76055                                      2.71
+103 Candida_albicans_p76067                                      2.71
+104 Candida_albicans_p78042                                      2.71
+105 Candida_albicans_p78048                                      2.71
+106 Candida_albicans_p87                                         2.71
+107 Candida_albicans_p94015                                      2.71
+108 Candida_albicans_sc5314                                      2.71
+109 Candida_albicans_sc5314_gca_000784655                        2.71
+110 Candida_albicans_wo_1                                        2.71
+111 Candida_arabinofermentans_nrrl_yb_2248                       2.68
+112 Candida_dubliniensis_cd36                                    2.69
+113 Candida_maltosa_xu316                                        2.78
+114 Candida_orthopsilosis_co_90_125                              2.84
+115 Candida_parapsilosis_cdc317                                  2.87
+116 Candida_tanzawaensis_nrrl_y_17324                            2.87
+117 Candida_tropicalis_mya_3404                                  2.66
+118 Capronia_coronata_cbs_617_96                                 2.90
+119 Capronia_epimyces_cbs_606_96                                 2.88
+120 Capronia_semi_immersa                                        2.88
+121 Ceraceosorus_bombacis                                        2.92
+122 Ceratocystis_platani                                         2.91
+123 Cercospora_fijiensis_cirad86                                 2.94
+124 Chaetomium_globosum_cbs_148_51                               2.77
+125 Chaetomium_thermophilum_var_thermophilum_dsm_1495            2.85
+126 Choanephora_cucurbitarum                                     2.88
+127 Cladophialophora_bantiana_cbs_173_52                         2.92
+128 Cladophialophora_carrionii                                   2.87
+129 Cladophialophora_carrionii_cbs_160_54                        2.87
+130 Cladophialophora_immunda                                     2.88
+131 Cladophialophora_psammophila_cbs_110553                      2.92
+132 Cladophialophora_yegresii_cbs_114405                         2.88
+133 Claviceps_purpurea_20_1                                      2.90
+134 Clavispora_lusitaniae_atcc_42720                             2.90
+135 Coccidioides_immitis_h538_4                                  2.95
+136 Coccidioides_immitis_rmscc_2394                              2.95
+137 Coccidioides_immitis_rmscc_3703                              2.95
+138 Coccidioides_immitis_rs                                      2.95
+139 Coccidioides_posadasii_c735_delta_sowgp                      2.95
+140 Coccidioides_posadasii_rmscc_3488                            2.95
+141 Coccidioides_posadasii_str_silveira                          2.95
+142 Colletotrichum_fioriniae_pj7                                 2.85
+143 Colletotrichum_gloeosporioides                               2.81
+144 Colletotrichum_gloeosporioides_cg_14                         2.81
+145 Colletotrichum_graminicola                                   2.75
+146 Colletotrichum_higginsianum                                  2.71
+147 Colletotrichum_higginsianum_imi_349063                       2.72
+148 Colletotrichum_incanum                                       2.83
+149 Colletotrichum_nymphaeae_sa_01                               2.84
+150 Colletotrichum_orbiculare                                    2.74
+151 Colletotrichum_salicis                                       2.84
+152 Colletotrichum_simmondsii                                    2.84
+153 Colletotrichum_sublineola                                    2.79
+154 Colletotrichum_tofieldiae                                    2.79
+155 Conidiobolus_coronatus_nrrl_28638                            2.75
+156 Coniophora_puteana_rwd_64_598_ss2                            2.87
+157 Coniosporium_apollinis_cbs_100218                            2.84
+158 Coprinopsis_cinerea_okayama7_130                             2.93
+159 Cordyceps_brongniartii_rcef_3172                             2.80
+160 Cordyceps_confragosa                                         2.81
+161 Cordyceps_confragosa_rcef_1005                               2.78
+162 Cordyceps_militaris_cm01                                     2.75
+163 Cryptococcus_amylolentus_cbs_6039                            2.90
+164 Cryptococcus_amylolentus_cbs_6273                            2.90
+165 Cryptococcus_depauperatus_cbs_7841                           2.95
+166 Cryptococcus_depauperatus_cbs_7855                           2.95
+167 Cryptococcus_gattii_ca1280                                   2.95
+168 Cryptococcus_gattii_ca1873                                   2.95
+169 Cryptococcus_gattii_e566                                     2.95
+170 Cryptococcus_gattii_ejb2                                     2.95
+171 Cryptococcus_gattii_nt_10                                    2.95
+172 Cryptococcus_gattii_ru294                                    2.95
+173 Cryptococcus_gattii_vgii_2001_935_1                          2.95
+174 Cryptococcus_gattii_vgii_99_473                              2.95
+175 Cryptococcus_gattii_vgii_ca1014                              2.95
+176 Cryptococcus_gattii_vgii_cbs_10090                           2.95
+177 Cryptococcus_gattii_vgii_la55                                2.95
+178 Cryptococcus_gattii_vgii_mmrl2647                            2.95
+179 Cryptococcus_gattii_vgii_r265                                2.95
+180 Cryptococcus_gattii_vgii_ram5                                2.95
+181 Cryptococcus_gattii_vgiv_ind107                              2.95
+182 Cryptococcus_gattii_wm276                                    2.95
+183 Cryptococcus_neoformans                                      2.95
+184 Cryptococcus_neoformans_var_grubii_h99                       2.95
+185 Cryptococcus_neoformans_var_neoformans_b_3501a               2.95
+186 Cutaneotrichosporon_oleaginosus                              2.66
+187 Cyberlindnera_jadinii                                        2.92
+188 Cyberlindnera_jadinii_nrrl_y_1542                            2.92
+189 Cylindrobasidium_torrendii_fp15055_ss_10                     2.92
+190 Cyphellophora_europaea_cbs_101466                            2.88
+191 Dacryopinax_primogenitus                                     2.90
+192 Dactylellina_haptotyla_cbs_200_50                            2.93
+193 Daedalea_quercina_l_15889                                    2.84
+194 Debaryomyces_fabryi                                          2.82
+195 Debaryomyces_hansenii_cbs767                                 2.83
+196 Diaporthe_ampelina                                           2.70
+197 Diaporthe_helianthi                                          2.79
+198 Dichomitus_squalens_lyad_421_ss1                             2.82
+199 Diplodia_seriata                                             2.65
+200 Dothistroma_septosporum                                      2.91
+201 Drechmeria_coniospora                                        2.69
+202 Drechslerella_stenobrocha_248                                2.86
+203 Edhazardia_aedis_usnm_41457                                  2.56
+204 Emmonsia_crescens_uamh_3008                                  2.94
+205 Emmonsia_parva_uamh_139                                      2.92
+206 Emmonsia_sp_cac_2015a                                        2.94
+207 Encephalitozoon_cuniculi_ecuniii_l                           2.90
+208 Encephalitozoon_cuniculi_gb_m1                               2.90
+209 Encephalitozoon_hellem_atcc_50504                            2.90
+210 Encephalitozoon_intestinalis_atcc_50506                      2.89
+211 Encephalitozoon_romaleae_sj_2008                             2.88
+212 Endocarpon_pusillum_z07020                                   2.94
+213 Enterocytozoon_bieneusi_h348                                 2.57
+214 Eremothecium_cymbalariae_dbvpg_7215                          2.90
+215 Eremothecium_gossypii_fdag1                                  2.77
+216 Eremothecium_sinecaudum                                      2.90
+217 Erysiphe_necator                                             2.87
+218 Escovopsis_weberi                                            2.51
+219 Eutypa_lata_ucrel1                                           2.80
+220 Exidia_glandulosa_hhb12029                                   2.82
+221 Exophiala_aquamarina_cbs_119918                              2.94
+222 Exophiala_dermatitidis_nih_ut8656                            2.92
+223 Exophiala_mesophila                                          2.95
+224 Exophiala_oligosperma                                        2.92
+225 Exophiala_sideris                                            2.94
+226 Exophiala_spinifera                                          2.91
+227 Exophiala_xenobiotica                                        2.93
+228 Fibroporia_radiculosa                                        2.91
+229 Fibulorhizoctonia_sp_cbs_109695                              2.88
+230 Fistulina_hepatica_atcc_64428                                2.93
+231 Fomitiporia_mediterranea_mf3_22                              2.93
+232 Fomitopsis_pinicola_fp_58527_ss1                             2.81
+233 Fonsecaea_erecta                                             2.86
+234 Fonsecaea_monophora                                          2.89
+235 Fonsecaea_multimorphosa                                      2.90
+236 Fonsecaea_multimorphosa_cbs_102226                           2.90
+237 Fonsecaea_nubica                                             2.89
+238 Fonsecaea_pedrosoi_cbs_271_37                                2.89
+239 Fusarium_culmorum                                            2.94
+240 Fusarium_fujikuroi                                           2.94
+241 Fusarium_fujikuroi_gca_001023035                             2.94
+242 Fusarium_fujikuroi_gca_001023045                             2.94
+243 Fusarium_fujikuroi_gca_001023065                             2.94
+244 Fusarium_fujikuroi_imi_58289                                 2.94
+245 Fusarium_graminearum                                         2.94
+246 Fusarium_graminearum_gca_000599445                           2.94
+247 Fusarium_langsethiae                                         2.94
+248 Fusarium_oxysporum                                           2.94
+249 Fusarium_oxysporum_f_sp_conglutinans_race_2_54008            2.94
+250 Fusarium_oxysporum_f_sp_cubense_race_1                       2.94
+251 Fusarium_oxysporum_f_sp_cubense_race_4                       2.94
+252 Fusarium_oxysporum_f_sp_cubense_tropical_race_4_54006        2.94
+253 Fusarium_oxysporum_f_sp_lycopersici_mn25                     2.94
+254 Fusarium_oxysporum_f_sp_melonis_26406                        2.94
+255 Fusarium_oxysporum_f_sp_pisi_hdv247                          2.94
+256 Fusarium_oxysporum_f_sp_radicis_lycopersici_26381            2.94
+257 Fusarium_oxysporum_f_sp_raphani_54005                        2.94
+258 Fusarium_oxysporum_f_sp_vasinfectum_25433                    2.94
+259 Fusarium_oxysporum_fo47                                      2.94
+260 Fusarium_oxysporum_fosc_3_a                                  2.94
+261 Fusarium_poae                                                2.94
+262 Fusarium_pseudograminearum                                   2.93
+263 Fusarium_solani                                              2.90
+264 Fusarium_verticillioides                                     2.93
+265 Gaeumannomyces_graminis                                      2.64
+266 Galerina_marginata_cbs_339_88                                2.94
+267 Gelatoporia_subvermispora_b                                  2.86
+268 Geotrichum_candidum                                          2.92
+269 Glarea_lozoyensis_74030                                      2.94
+270 Glarea_lozoyensis_atcc_20868                                 2.96
+271 Gloeophyllum_trabeum_atcc_11539                              2.84
+272 Gonapodya_prolifera_jel478                                   2.89
+273 Grifola_frondosa                                             2.91
+274 Grosmannia_clavigera_kw1407                                  2.75
+275 Gymnopus_luxurians_fd_317_m1                                 2.95
+276 Hanseniaspora_opuntiae                                       2.81
+277 Hanseniaspora_osmophila                                      2.87
+278 Hanseniaspora_uvarum                                         2.72
+279 Hanseniaspora_uvarum_dsm_2768                                2.72
+280 Hanseniaspora_valbyensis_nrrl_y_1626                         2.56
+281 Hebeloma_cylindrosporum_h7                                   2.95
+282 Heterobasidion_irregulare_tc_32_1                            2.85
+283 Hirsutella_minnesotensis_3608                                2.83
+284 Histoplasma_capsulatum_g186ar                                2.95
+285 Histoplasma_capsulatum_h143                                  2.95
+286 Histoplasma_capsulatum_h88                                   2.95
+287 Histoplasma_capsulatum_nam1                                  2.94
+288 Hydnomerulius_pinastri_md_312                                2.94
+289 Hypholoma_sublateritium_fd_334_ss_4                          2.87
+290 Hyphopichia_burtonii_nrrl_y_1933                             2.75
+291 Hypsizygus_marmoreus                                         2.94
+292 Isaria_fumosorosea_arsef_2679                                2.68
+293 Jaapia_argillacea_mucl_33604                                 2.95
+294 Kalmanozyma_brasiliensis_ghg001                              2.78
+295 Kazachstania_africana_cbs_2517                               2.82
+296 Kazachstania_naganishii_cbs_8797                             2.89
+297 Kluyveromyces_lactis                                         2.89
+298 Kluyveromyces_marxianus                                      2.89
+299 Kluyveromyces_marxianus_dmku3_1042                           2.88
+300 Komagataella_pastoris                                        2.91
+301 Komagataella_pastoris_gca_001708105                          2.91
+302 Komagataella_phaffii                                         2.91
+303 Komagataella_phaffii_cbs_7435                                2.90
+304 Kuraishia_capsulata_cbs_1993                                 2.94
+305 Kwoniella_bestiolae_cbs_10118                                2.97
+306 Kwoniella_dejecticola_cbs_10117                              2.97
+307 Kwoniella_heveanensis_bcc8398                                2.93
+308 Kwoniella_heveanensis_cbs_569                                2.93
+309 Kwoniella_mangroviensis_cbs_10435                            2.95
+310 Kwoniella_mangroviensis_cbs_8507                             2.95
+311 Kwoniella_mangroviensis_cbs_8886                             2.95
+312 Kwoniella_pini_cbs_10737                                     2.77
+313 Laccaria_amethystina_laam_08_1                               2.95
+314 Laccaria_bicolor_s238n_h82                                   2.95
+315 Lachancea_lanzarotensis                                      2.94
+316 Lachancea_thermotolerans_cbs_6340                            2.89
+317 Laetiporus_sulphureus_93_53                                  2.90
+318 Leptosphaeria_maculans                                       2.91
+319 Leucoagaricus_sp_symc_cos                                    2.92
+320 Lichtheimia_corymbifera_jmrc_fsu_9682                        2.94
+321 Lichtheimia_ramosa                                           2.90
+322 Lipomyces_starkeyi_nrrl_y_11557                              2.95
+323 Lodderomyces_elongisporus_nrrl_yb_4239                       2.88
+324 Macrophomina_phaseolina_ms6                                  2.80
+325 Madurella_mycetomatis                                        2.79
+326 Magnaporthe_oryzae                                           2.81
+327 Magnaporthe_poae                                             2.69
+328 Malassezia_pachydermatis                                     2.88
+329 Malassezia_sympodialis_atcc_42132                            2.71
+330 Marssonina_brunnea_f_sp_multigermtubi_mb_m1                  2.89
+331 Melampsora_laricipopulina                                    2.89
+332 Metarhizium_acridum_cqma_102                                 2.88
+333 Metarhizium_album_arsef_1941                                 2.81
+334 Metarhizium_anisopliae                                       2.86
+335 Metarhizium_anisopliae_arsef_23                              2.87
+336 Metarhizium_anisopliae_arsef_549                             2.86
+337 Metarhizium_anisopliae_brip_53284                            2.87
+338 Metarhizium_anisopliae_brip_53293                            2.87
+339 Metarhizium_brunneum_arsef_3297                              2.86
+340 Metarhizium_guizhouense_arsef_977                            2.87
+341 Metarhizium_majus_arsef_297                                  2.87
+342 Metarhizium_rileyi_rcef_4871                                 2.88
+343 Metarhizium_robertsii                                        2.87
+344 Metschnikowia_bicuspidata_var_bicuspidata_nrrl_yb_4993       2.80
+345 Meyerozyma_guilliermondii_atcc_6260                          2.93
+346 Microbotryum_violaceum                                       2.87
+347 Microdochium_bolleyi                                         2.72
+348 Microsporum_gypseum_cbs_118893                               2.94
+349 Millerozyma_farinosa_cbs_7064                                2.90
+350 Mitosporidium_daphniae                                       2.93
+351 Mixia_osmundae_iam_14324                                     2.91
+352 Mixia_osmundae_iam_14324_gca_000708205                       2.92
+353 Moesziomyces_antarcticus                                     2.72
+354 Moesziomyces_aphidis_dsm_70725                               2.71
+355 Moniliophthora_perniciosa_fa553                              2.95
+356 Moniliophthora_roreri                                        2.95
+357 Moniliophthora_roreri_mca_2997                               2.96
+358 Mortierella_elongata_ag_77                                   2.91
+359 Mortierella_verticillata_nrrl_6337                           2.88
+360 Mucor_ambiguus                                               2.93
+361 Mucor_circinelloides_f_circinelloides_1006phl                2.91
+362 Mucor_circinelloides_f_lusitanicus_cbs_277_49                2.93
+363 Myceliophthora_thermophila_atcc_42464                        2.67
+364 Mycosphaerella_eumusae                                       2.94
+365 Nadsonia_fulvescens_var_elongata_dsm_6958                    2.90
+366 Naumovozyma_castellii_cbs_4309                               2.83
+367 Naumovozyma_dairenensis_cbs_421                              2.75
+368 Nematocida_parisii_ertm1                                     2.78
+369 Nematocida_parisii_ertm3                                     2.78
+370 Nematocida_sp_1_ertm2                                        2.86
+371 Nematocida_sp_1_ertm6                                        2.87
+372 Nematocida_sp_ertm5                                          2.75
+373 Neofusicoccum_parvum_ucrnp2                                  2.63
+374 Neolentinus_lepideus_hhb14362_ss_1                           2.91
+375 Neonectria_ditissima                                         2.81
+376 Neosartorya_fischeri                                         2.90
+377 Neurospora_crassa                                            2.86
+378 Neurospora_crassa_gca_000786625                              2.87
+379 Neurospora_tetrasperma_fgsc_2508                             2.87
+380 Neurospora_tetrasperma_fgsc_2509                             2.87
+381 Nosema_apis_brl_01                                           2.30
+382 Nosema_bombycis_cq1                                          2.58
+383 Nosema_ceranae                                               2.47
+384 Nosema_ceranae_brl01                                         2.46
+385 Ogataea_parapolymorpha_dl_1                                  2.88
+386 Ogataea_polymorpha                                           2.88
+387 Oidiodendron_maius_zn                                        2.94
+388 Ophiocordyceps_sinensis_co18                                 2.70
+389 Ophiocordyceps_unilateralis                                  2.77
+390 Ophiostoma_piceae_uamh_11346                                 2.76
+391 Ordospora_colligata_oc4                                      2.86
+392 Pachysolen_tannophilus_nrrl_y_2460                           2.53
+393 Paracoccidioides_brasiliensis                                2.95
+394 Paracoccidioides_brasiliensis_gca_001713695                  2.94
+395 Paracoccidioides_brasiliensis_pb03                           2.95
+396 Paracoccidioides_brasiliensis_pb18                           2.95
+397 Paracoccidioides_sp_lutzii_pb01                              2.95
+398 Paraphaeosphaeria_sporulosa                                  2.86
+399 Parasitella_parasitica                                       2.91
+400 Paxillus_involutus_atcc_200175                               2.94
+401 Paxillus_rubicundulus_ve08_2h10                              2.94
+402 Penicillium_brasilianum                                      2.91
+403 Penicillium_camemberti_fm_013                                2.93
+404 Penicillium_chrysogenum                                      2.92
+405 Penicillium_digitatum_pd1                                    2.93
+406 Penicillium_digitatum_phi26                                  2.92
+407 Penicillium_expansum                                         2.93
+408 Penicillium_expansum_gca_000769735                           2.92
+409 Penicillium_expansum_gca_000769745                           2.93
+410 Penicillium_freii                                            2.93
+411 Penicillium_griseofulvum                                     2.93
+412 Penicillium_italicum                                         2.92
+413 Penicillium_nordicum                                         2.93
+414 Penicillium_oxalicum_114_2                                   2.91
+415 Penicillium_roqueforti_fm164                                 2.93
+416 Penicillium_rubens_wisconsin_54_1255                         2.93
+417 Peniophora_sp_cont                                           2.89
+418 Pestalotiopsis_fici_w106_1                                   2.90
+419 Phaeoacremonium_minimum_ucrpa7                               2.85
+420 Phaeomoniella_chlamydospora                                  2.96
+421 Phaeosphaeria_nodorum                                        2.89
+422 Phanerochaete_carnosa_hhb_10118_sp                           2.86
+423 Phialocephala_scopiformis                                    2.95
+424 Phialophora_attae                                            2.91
+425 Phlebiopsis_gigantea_11061_1_cr5_6                           2.82
+426 Phycomyces_blakesleeanus_nrrl_1555_                          2.90
+427 Pichia_kudriavzevii                                          2.85
+428 Pichia_membranifaciens_nrrl_y_2026                           2.82
+429 Piloderma_croceum_f_1598                                     2.96
+430 Pisolithus_microcarpus_441                                   2.95
+431 Pisolithus_tinctorius_marx_270                               2.95
+432 Pleurotus_ostreatus_pc15                                     2.93
+433 Plicaturopsis_crispa_fd_325_ss_3                             2.85
+434 Pneumocystis_carinii_b80                                     2.58
+435 Pneumocystis_jirovecii_ru7                                   2.61
+436 Pneumocystis_murina_b123                                     2.56
+437 Pochonia_chlamydosporia_170                                  2.94
+438 Podospora_anserina_s_mat_                                    2.87
+439 Postia_placenta_mad_698_r                                    2.86
+440 Pseudocercospora_musae                                       2.94
+441 Pseudogymnoascus_destructans                                 2.88
+442 Pseudogymnoascus_destructans_20631_21                        2.87
+443 Pseudogymnoascus_sp_03vt05                                   2.89
+444 Pseudogymnoascus_sp_05ny08                                   2.89
+445 Pseudogymnoascus_sp_23342_1_i1                               2.87
+446 Pseudogymnoascus_sp_24mn13                                   2.90
+447 Pseudogymnoascus_sp_vkm_f_103                                2.90
+448 Pseudogymnoascus_sp_vkm_f_3557                               2.90
+449 Pseudogymnoascus_sp_vkm_f_3775                               2.92
+450 Pseudogymnoascus_sp_vkm_f_3808                               2.90
+451 Pseudogymnoascus_sp_vkm_f_4246                               2.89
+452 Pseudogymnoascus_sp_vkm_f_4281_fw_2241_                      2.89
+453 Pseudogymnoascus_sp_vkm_f_4513_fw_928_                       2.89
+454 Pseudogymnoascus_sp_vkm_f_4514_fw_929_                       2.90
+455 Pseudogymnoascus_sp_vkm_f_4515_fw_2607_                      2.90
+456 Pseudogymnoascus_sp_vkm_f_4516_fw_969_                       2.90
+457 Pseudogymnoascus_sp_vkm_f_4517_fw_2822_                      2.89
+458 Pseudogymnoascus_sp_vkm_f_4518_fw_2643_                      2.90
+459 Pseudogymnoascus_sp_vkm_f_4519_fw_2642_                      2.90
+460 Pseudogymnoascus_sp_vkm_f_4520_fw_2644_                      2.90
+461 Pseudogymnoascus_sp_wsf_3629                                 2.89
+462 Pseudogymnoascus_verrucosus                                  2.89
+463 Pseudoloma_neurophilia                                       2.59
+464 Pseudozyma_hubeiensis_sy62                                   2.87
+465 Puccinia_graminis                                            2.95
+466 Puccinia_graminisug99                                        2.95
+467 Puccinia_sorghi                                              2.92
+468 Puccinia_striiformis                                         2.93
+469 Puccinia_striiformis_f_sp_tritici_pst_78                     2.94
+470 Puccinia_triticina                                           2.89
+471 Punctularia_strigosozonata_hhb_11173_ss5                     2.81
+472 Purpureocillium_lilacinum                                    2.69
+473 Pyrenochaeta_sp_ds3say3a                                     2.91
+474 Pyrenophora_teres                                            2.91
+475 Pyrenophora_triticirepentis                                  2.92
+476 Pyronema_omphalodes_cbs_100304                               2.94
+477 Rasamsonia_emersonii_cbs_393_64                              2.87
+478 Rhinocladiella_mackenziei_cbs_650_93                         2.95
+479 Rhizoctonia_solani                                           2.95
+480 Rhizoctonia_solani_123e                                      2.95
+481 Rhizoctonia_solani_ag_1_ia                                   2.96
+482 Rhizoctonia_solani_ag_1_ib                                   2.94
+483 Rhizoctonia_solani_ag_3_rhs1ap                               2.95
+484 Rhizoctonia_solani_ag_8_wac10335                             2.95
+485 Rhizophagus_irregularis_daom_181602                          2.61
+486 Rhizophagus_irregularis_daom_197198w                         2.62
+487 Rhizopogon_vinicolor_am_or11_026                             2.95
+488 Rhizopus_delemar_ra_99_880                                   2.85
+489 Rhodotorula_glutinis_atcc_204091                             2.71
+490 Rhodotorula_graminis_wp1                                     2.35
+491 Rhodotorula_sp_jg_1b                                         2.71
+492 Rhodotorula_toruloides                                       2.69
+493 Rhodotorula_toruloides_np11                                  2.69
+494 Rosellinia_necatrix                                          2.78
+495 Rozella_allomycis_csf55                                      2.79
+496 Saccharomyces_arboricola_h_6                                 2.88
+497 Saccharomyces_cerevisiae                                     2.87
+498 Saccharomyces_cerevisiae_awri796                             2.88
+499 Saccharomyces_cerevisiae_cen_pk113_7d                        2.88
+500 Saccharomyces_cerevisiae_ec1118                              2.87
+501 Saccharomyces_cerevisiae_fostersb                            2.88
+502 Saccharomyces_cerevisiae_fosterso                            2.88
+503 Saccharomyces_cerevisiae_gca_000091065                       2.88
+504 Saccharomyces_cerevisiae_gca_001634645                       2.87
+505 Saccharomyces_cerevisiae_kyokai_no_7                         2.88
+506 Saccharomyces_cerevisiae_lalvin_qa23                         2.88
+507 Saccharomyces_cerevisiae_p283                                2.88
+508 Saccharomyces_cerevisiae_p301                                2.88
+509 Saccharomyces_cerevisiae_r008                                2.88
+510 Saccharomyces_cerevisiae_r103                                2.88
+511 Saccharomyces_cerevisiae_rm11_1a                             2.88
+512 Saccharomyces_cerevisiae_vin13                               2.88
+513 Saccharomyces_cerevisiae_vl3                                 2.88
+514 Saccharomyces_cerevisiae_x_saccharomyces_kudriavzevii_vin7   2.89
+515 Saccharomyces_cerevisiae_yjm1078                             2.87
+516 Saccharomyces_cerevisiae_yjm1083                             2.87
+517 Saccharomyces_cerevisiae_yjm1129                             2.87
+518 Saccharomyces_cerevisiae_yjm1133                             2.87
+519 Saccharomyces_cerevisiae_yjm1190                             2.87
+520 Saccharomyces_cerevisiae_yjm1199                             2.87
+521 Saccharomyces_cerevisiae_yjm1202                             2.87
+522 Saccharomyces_cerevisiae_yjm1208                             2.87
+523 Saccharomyces_cerevisiae_yjm1242                             2.87
+524 Saccharomyces_cerevisiae_yjm1244                             2.87
+525 Saccharomyces_cerevisiae_yjm1248                             2.87
+526 Saccharomyces_cerevisiae_yjm1250                             2.87
+527 Saccharomyces_cerevisiae_yjm1252                             2.87
+528 Saccharomyces_cerevisiae_yjm1273                             2.87
+529 Saccharomyces_cerevisiae_yjm1304                             2.87
+530 Saccharomyces_cerevisiae_yjm1307                             2.87
+531 Saccharomyces_cerevisiae_yjm1311                             2.87
+532 Saccharomyces_cerevisiae_yjm1326                             2.87
+533 Saccharomyces_cerevisiae_yjm1332                             2.87
+534 Saccharomyces_cerevisiae_yjm1336                             2.87
+535 Saccharomyces_cerevisiae_yjm1338                             2.87
+536 Saccharomyces_cerevisiae_yjm1341                             2.87
+537 Saccharomyces_cerevisiae_yjm1342                             2.87
+538 Saccharomyces_cerevisiae_yjm1355                             2.87
+539 Saccharomyces_cerevisiae_yjm1356                             2.87
+540 Saccharomyces_cerevisiae_yjm1381                             2.87
+541 Saccharomyces_cerevisiae_yjm1383                             2.87
+542 Saccharomyces_cerevisiae_yjm1385                             2.87
+543 Saccharomyces_cerevisiae_yjm1386                             2.87
+544 Saccharomyces_cerevisiae_yjm1387                             2.87
+545 Saccharomyces_cerevisiae_yjm1388                             2.87
+546 Saccharomyces_cerevisiae_yjm1389                             2.87
+547 Saccharomyces_cerevisiae_yjm1399                             2.87
+548 Saccharomyces_cerevisiae_yjm1400                             2.87
+549 Saccharomyces_cerevisiae_yjm1401                             2.87
+550 Saccharomyces_cerevisiae_yjm1402                             2.87
+551 Saccharomyces_cerevisiae_yjm1415                             2.87
+552 Saccharomyces_cerevisiae_yjm1417                             2.87
+553 Saccharomyces_cerevisiae_yjm1418                             2.87
+554 Saccharomyces_cerevisiae_yjm1419                             2.87
+555 Saccharomyces_cerevisiae_yjm1433                             2.87
+556 Saccharomyces_cerevisiae_yjm1434                             2.87
+557 Saccharomyces_cerevisiae_yjm1439                             2.87
+558 Saccharomyces_cerevisiae_yjm1443                             2.87
+559 Saccharomyces_cerevisiae_yjm1444                             2.87
+560 Saccharomyces_cerevisiae_yjm1447                             2.87
+561 Saccharomyces_cerevisiae_yjm1450                             2.87
+562 Saccharomyces_cerevisiae_yjm1460                             2.87
+563 Saccharomyces_cerevisiae_yjm1463                             2.87
+564 Saccharomyces_cerevisiae_yjm1477                             2.87
+565 Saccharomyces_cerevisiae_yjm1478                             2.87
+566 Saccharomyces_cerevisiae_yjm1479                             2.87
+567 Saccharomyces_cerevisiae_yjm1526                             2.87
+568 Saccharomyces_cerevisiae_yjm1527                             2.87
+569 Saccharomyces_cerevisiae_yjm1549                             2.87
+570 Saccharomyces_cerevisiae_yjm1573                             2.87
+571 Saccharomyces_cerevisiae_yjm1574                             2.87
+572 Saccharomyces_cerevisiae_yjm1592                             2.87
+573 Saccharomyces_cerevisiae_yjm1615                             2.87
+574 Saccharomyces_cerevisiae_yjm189                              2.87
+575 Saccharomyces_cerevisiae_yjm193                              2.87
+576 Saccharomyces_cerevisiae_yjm195                              2.87
+577 Saccharomyces_cerevisiae_yjm244                              2.87
+578 Saccharomyces_cerevisiae_yjm248                              2.87
+579 Saccharomyces_cerevisiae_yjm270                              2.87
+580 Saccharomyces_cerevisiae_yjm271                              2.87
+581 Saccharomyces_cerevisiae_yjm320                              2.87
+582 Saccharomyces_cerevisiae_yjm326                              2.87
+583 Saccharomyces_cerevisiae_yjm428                              2.87
+584 Saccharomyces_cerevisiae_yjm450                              2.87
+585 Saccharomyces_cerevisiae_yjm451                              2.87
+586 Saccharomyces_cerevisiae_yjm453                              2.87
+587 Saccharomyces_cerevisiae_yjm456                              2.87
+588 Saccharomyces_cerevisiae_yjm470                              2.87
+589 Saccharomyces_cerevisiae_yjm541                              2.87
+590 Saccharomyces_cerevisiae_yjm554                              2.87
+591 Saccharomyces_cerevisiae_yjm555                              2.87
+592 Saccharomyces_cerevisiae_yjm627                              2.87
+593 Saccharomyces_cerevisiae_yjm681                              2.87
+594 Saccharomyces_cerevisiae_yjm682                              2.87
+595 Saccharomyces_cerevisiae_yjm683                              2.87
+596 Saccharomyces_cerevisiae_yjm689                              2.87
+597 Saccharomyces_cerevisiae_yjm693                              2.87
+598 Saccharomyces_cerevisiae_yjm789                              2.88
+599 Saccharomyces_cerevisiae_yjm969                              2.87
+600 Saccharomyces_cerevisiae_yjm972                              2.87
+601 Saccharomyces_cerevisiae_yjm975                              2.87
+602 Saccharomyces_cerevisiae_yjm978                              2.87
+603 Saccharomyces_cerevisiae_yjm981                              2.87
+604 Saccharomyces_cerevisiae_yjm984                              2.87
+605 Saccharomyces_cerevisiae_yjm987                              2.87
+606 Saccharomyces_cerevisiae_yjm990                              2.87
+607 Saccharomyces_cerevisiae_yjm993                              2.87
+608 Saccharomyces_cerevisiae_yjm996                              2.87
+609 Saccharomyces_eubayanus                                      2.88
+610 Saccharomyces_kudriavzevii_ifo_1802                          2.89
+611 Saccharomyces_sp_boulardii_                                  2.88
+612 Saccharomyces_sp_boulardii_gca_001413975                     2.88
+613 Saccharomycetaceae_sp_ashbya_aceri_                          2.81
+614 Saitoella_complicata_nrrl_y_17804                            2.93
+615 Saitoella_complicata_nrrl_y_17804_gca_001661265              2.91
+616 Scedosporium_apiospermum                                     2.87
+617 Scheffersomyces_stipitis_cbs_6054                            2.91
+618 Schizophyllum_commune_h4_8                                   2.76
+619 Schizopora_paradoxa                                          2.94
+620 Schizosaccharomyces_cryophilus                               2.88
+621 Schizosaccharomyces_japonicus                                2.92
+622 Schizosaccharomyces_octosporus                               2.88
+623 Schizosaccharomyces_pombe                                    2.85
+624 Scleroderma_citrinum_foug_a                                  2.95
+625 Sclerotinia_borealis_f_4157                                  2.95
+626 Sclerotinia_sclerotiorum                                     2.93
+627 Serendipita_indica_dsm_11827                                 2.95
+628 Serendipita_vermifera_maff_305830                            2.96
+629 Serpula_lacrymans_var_lacrymans_s7_3                         2.95
+630 Serpula_lacrymans_var_lacrymans_s7_9                         2.95
+631 Setosphaeria_turcica_et28a                                   2.87
+632 Sistotremastrum_niveocremeum_hhb9708                         2.96
+633 Sistotremastrum_suecicum_hhb10207_ss_3                       2.96
+634 Sordaria_macrospora                                          2.85
+635 Spathaspora_passalidarum_nrrl_y_27907                        2.84
+636 Sphaerobolus_stellatus_ss14                                  2.94
+637 Sphaerulina_musiva_so2202                                    2.92
+638 Spizellomyces_punctatus_daom_br117                           2.96
+639 Sporidiobolus_salmonicolor                                   2.67
+640 Sporisorium_reilianum                                        2.67
+641 Sporisorium_scitamineum                                      2.87
+642 Sporothrix_brasiliensis_5110                                 2.66
+643 Sporothrix_insectorum_rcef_264                               2.63
+644 Sporothrix_schenckii_1099_18                                 2.71
+645 Sporothrix_schenckii_atcc_58251                              2.66
+646 Spraguea_lophii_42_110                                       2.36
+647 Stachybotrys_chartarum_ibt_40288                             2.81
+648 Stachybotrys_chartarum_ibt_40293                             2.81
+649 Stachybotrys_chartarum_ibt_7711                              2.81
+650 Stachybotrys_chlorohalonata_ibt_40285                        2.82
+651 Stagonospora_sp_src1lsm3a                                    2.91
+652 Stemphylium_lycopersici                                      2.90
+653 Stereum_hirsutum_fp_91666_ss1                                2.93
+654 Sugiyamaella_lignohabitans                                   2.93
+655 Suillus_luteus_uh_slu_lm8_n1                                 2.96
+656 Talaromyces_cellulolyticus                                   2.96
+657 Talaromyces_islandicus                                       2.93
+658 Talaromyces_marneffei_atcc_18224                             2.95
+659 Talaromyces_marneffei_pm1                                    2.96
+660 Talaromyces_stipitatus_atcc_10500                            2.96
+661 Termitomyces_sp_j132                                         2.94
+662 Tetrapisispora_blattae_cbs_6284                              2.69
+663 Tetrapisispora_phaffii_cbs_4417                              2.75
+664 Thielavia_terrestris_nrrl_8126                               2.61
+665 Thielaviopsis_punctulata                                     2.82
+666 Tilletia_caries                                              2.82
+667 Tilletia_controversa                                         2.82
+668 Tilletia_indica                                              2.88
+669 Tilletia_walkeri                                             2.88
+670 Tilletiaria_anomala_ubc_951                                  2.86
+671 Tolypocladium_ophioglossoides_cbs_100239                     2.72
+672 Torrubiella_hemipterigena                                    2.91
+673 Tortispora_caseinolytica_nrrl_y_17796                        2.94
+674 Torulaspora_delbrueckii                                      2.92
+675 Trachipleistophora_hominis                                   2.82
+676 Trametes_cinnabarina                                         2.81
+677 Trametes_versicolor_fp_101664_ss1                            2.76
+678 Tremella_mesenterica_dsm_1558                                2.94
+679 Trichoderma_atroviride_imi_206040                            2.89
+680 Trichoderma_gamsii                                           2.90
+681 Trichoderma_harzianum                                        2.90
+682 Trichoderma_reesei                                           2.76
+683 Trichoderma_reesei_rut_c_30                                  2.77
+684 Trichoderma_virens                                           2.90
+685 Trichophyton_equinum_cbs_127_97                              2.93
+686 Trichophyton_interdigitale_h6                                2.93
+687 Trichophyton_interdigitale_mr816                             2.93
+688 Trichophyton_rubrum                                          2.94
+689 Trichophyton_rubrum_cbs_100081                               2.93
+690 Trichophyton_rubrum_cbs_118892                               2.93
+691 Trichophyton_rubrum_cbs_202_88                               2.93
+692 Trichophyton_rubrum_cbs_288_86                               2.93
+693 Trichophyton_rubrum_cbs_289_86                               2.93
+694 Trichophyton_rubrum_cbs_735_88                               2.93
+695 Trichophyton_rubrum_d6                                       2.93
+696 Trichophyton_rubrum_mr1448                                   2.93
+697 Trichophyton_rubrum_mr1459                                   2.93
+698 Trichophyton_rubrum_mr850                                    2.93
+699 Trichophyton_soudanense_cbs_452_61                           2.93
+700 Trichophyton_tonsurans_cbs_112818                            2.93
+701 Trichophyton_verrucosum_hki_0517                             2.93
+702 Trichophyton_violaceum                                       2.93
+703 Trichosporon_asahii_var_asahii_cbs_2479                      2.70
+704 Trichosporon_asahii_var_asahii_cbs_8904                      2.70
+705 Tsuchiyaea_wingfieldii_cbs_7118                              2.90
+706 Tuber_melanosporum                                           2.94
+707 Tulasnella_calospora_mut_4182                                2.94
+708 Uncinocarpus_reesii_1704                                     2.94
+709 Ustilaginoidea_virens                                        2.77
+710 Ustilaginoidea_virens_gca_000965225                          2.76
+711 Ustilago_hordei                                              2.93
+712 Ustilago_maydis                                              2.90
+713 Valsa_mali                                                   2.84
+714 Valsa_mali_var_pyri                                          2.84
+715 Vanderwaltozyma_polyspora_dsm_70294                          2.74
+716 Vavraia_culicis_subsp_floridensis                            2.86
+717 Verruconis_gallopava                                         2.91
+718 Verticillium_alfalfae_vams_102                               2.77
+719 Verticillium_dahliae                                         2.74
+720 Verticillium_dahliaejr2                                      2.76
+721 Verticillium_longisporum                                     2.70
+722 Verticillium_longisporum_gca_001268165                       2.73
+723 Vittaforma_corneae_atcc_50505                                2.83
+724 Wallemia_ichthyophaga_exf_994                                2.94
+725 Wallemia_mellicola_cbs_633_66                                2.89
+726 Wickerhamomyces_anomalus_nrrl_y_366_8                        2.70
+727 Wickerhamomyces_ciferrii                                     2.50
+728 Xanthophyllomyces_dendrorhous                                2.95
+729 Xylona_heveae_tc161                                          2.93
+730 Yarrowia_lipolytica                                          2.87
+731 Yarrowia_lipolytica_gca_001761485                            2.88
+732 Zygosaccharomyces_bailii_isa1307                             2.92
+733 Zygosaccharomyces_rouxii                                     2.87
+734 Zymoseptoria_brevis                                          2.89
+735 Zymoseptoria_tritici                                         2.89
+> write.csv(fg735, file = "fg735.csv", row.names = FALSE)
 
+> metazoa_all <- read.table("metazoa_7.txt", header = TRUE)
+> mz_Cluster <- metazoa_all %>% group_by(Species)
+> mz068 <- mz_Cluster %>% summarise(TCBShE = harmonic.mean(TCBShE)) %>% print(n = Inf)
+# A tibble: 68 x 2
+   Species                       TCBShE
+   <chr>                          <dbl>
+ 1 Acyrthosiphon_pisum             2.78
+ 2 Adineta_vaga                    2.58
+ 3 Aedes_aegypti                   2.90
+ 4 Amphimedon_queenslandica        2.83
+ 5 Anopheles_darlingi              2.87
+ 6 Anopheles_gambiae               2.78
+ 7 Anoplophora_glabripennis        2.85
+ 8 Apis_mellifera                  2.71
+ 9 Atta_cephalotes                 2.87
+10 Belgica_antarctica              2.91
+11 Bombus_impatiens                2.82
+12 Bombyx_mori                     2.87
+13 Brugia_malayi                   2.81
+14 Caenorhabditis_brenneri         2.90
+15 Caenorhabditis_briggsae         2.90
+16 Caenorhabditis_elegans          2.89
+17 Caenorhabditis_japonica         2.92
+18 Caenorhabditis_remanei          2.89
+19 Capitella_teleta                2.92
+20 Crassostrea_gigas               2.93
+21 Culex_quinquefasciatus          2.79
+22 Danaus_plexippus                2.89
+23 Daphnia_pulex                   2.91
+24 Dendroctonus_ponderosae         2.90
+25 Drosophila_ananassae            2.83
+26 Drosophila_erecta               2.83
+27 Drosophila_grimshawi            2.90
+28 Drosophila_melanogaster         2.84
+29 Drosophila_mojavensis           2.86
+30 Drosophila_persimilis           2.82
+31 Drosophila_pseudoobscura        2.82
+32 Drosophila_sechellia            2.84
+33 Drosophila_simulans             2.83
+34 Drosophila_virilis              2.88
+35 Drosophila_willistoni           2.92
+36 Drosophila_yakuba               2.83
+37 Heliconius_melpomene            2.85
+38 Helobdella_robusta              2.87
+39 Ixodes_scapularis               2.75
+40 Lepeophtheirus_salmonis         2.85
+41 Lingula_anatina                 2.93
+42 Loa_loa                         2.82
+43 Lottia_gigantea                 2.76
+44 Lucilia_cuprina                 2.81
+45 Mayetiola_destructor            2.79
+46 Megaselia_scalaris              2.82
+47 Melitaea_cinxia                 2.86
+48 Mnemiopsis_leidyi               2.92
+49 Nasonia_vitripennis             2.84
+50 Nematostella_vectensis          2.91
+51 Octopus_bimaculoides            2.78
+52 Onchocerca_volvulus             2.81
+53 Pediculus_humanus               2.75
+54 Pristionchus_pacificus          2.88
+55 Rhodnius_prolixus               2.82
+56 Sarcoptes_scabiei               2.80
+57 Schistosoma_mansoni             2.72
+58 Solenopsis_invicta              2.88
+59 Stegodyphus_mimosarum           2.82
+60 Strigamia_maritima              2.88
+61 Strongylocentrotus_purpuratus   2.93
+62 Strongyloides_ratti             2.39
+63 Tetranychus_urticae             2.79
+64 Thelohanellus_kitauei           2.84
+65 Tribolium_castaneum             2.89
+66 Trichinella_spiralis            2.89
+67 Trichoplax_adhaerens            2.81
+68 Zootermopsis_nevadensis         2.91
+> write.csv(mz068, file = "mz068.csv", row.names = FALSE)
 
+> plants_all <- read.table("plants_7.txt", header = TRUE)
+> nt_Cluster <- plants_all %>% group_by(Species)
+> nt044 <- nt_Cluster %>% summarise(TCBShE = harmonic.mean(TCBShE)) %>% print(n = Inf)
+# A tibble: 44 x 2
+   Species                    TCBShE
+   <chr>                       <dbl>
+ 1 Aegilops_tauschii            2.76
+ 2 Amborella_trichopoda         2.93
+ 3 Arabidopsis_lyrata           2.92
+ 4 Arabidopsis_thaliana         2.93
+ 5 Beta_vulgaris                2.90
+ 6 Brachypodium_distachyon      2.76
+ 7 Brassica_napus               2.93
+ 8 Brassica_oleracea            2.94
+ 9 Brassica_rapa                2.94
+10 Chlamydomonas_reinhardtii    2.52
+11 Chondrus_crispus             2.87
+12 Cyanidioschyzon_merolae      2.89
+13 Galdieria_sulphuraria        2.86
+14 Glycine_max                  2.91
+15 Hordeum_vulgare              2.78
+16 Leersia_perrieri             2.80
+17 Medicago_truncatula          2.87
+18 Musa_acuminata               2.86
+19 Oryza_barthii                2.76
+20 Oryza_brachyantha            2.73
+21 Oryza_glaberrima             2.71
+22 Oryza_glumaepatula           2.75
+23 Oryza_indica                 2.69
+24 Oryza_longistaminata         2.75
+25 Oryza_meridionalis           2.75
+26 Oryza_nivara                 2.75
+27 Oryza_punctata               2.77
+28 Oryza_rufipogon              2.75
+29 Oryza_sativa                 2.69
+30 Ostreococcus_lucimarinus     2.74
+31 Physcomitrella_patens        2.93
+32 Populus_trichocarpa          2.92
+33 Prunus_persica               2.92
+34 Selaginella_moellendorffii   2.87
+35 Setaria_italica              2.73
+36 Solanum_lycopersicum         2.87
+37 Solanum_tuberosum            2.89
+38 Sorghum_bicolor              2.74
+39 Theobroma_cacao              2.92
+40 Trifolium_pratense           2.85
+41 Triticum_aestivum            2.75
+42 Triticum_urartu              2.76
+43 Vitis_vinifera               2.92
+44 Zea_mays                     2.83
+> write.csv(nt044, file = "nt044.csv", row.names = FALSE)
 
+> protists_all <- read.table("protists_7.txt", header = TRUE)
+> pr_Cluster <- protists_all %>% group_by(Species)
+> pr186 <- pr_Cluster %>% summarise(TCBShE = harmonic.mean(TCBShE)) %>% print(n = Inf)
+# A tibble: 186 x 2
+    Species                                      TCBShE
+    <chr>                                         <dbl>
+  1 Acanthamoeba_castellanii_str_neff              2.59
+  2 Albugo_candida                                 2.93
+  3 Albugo_laibachii                               2.94
+  4 Angomonas_deanei                               2.81
+  5 Aphanomyces_astaci                             2.83
+  6 Aphanomyces_invadans                           2.84
+  7 Aureococcus_anophagefferens                    2.12
+  8 Babesia_bigemina                               2.83
+  9 Babesia_bovis                                  2.91
+ 10 Babesia_microti_strain_ri                      2.84
+ 11 Bigelowiella_natans                            2.93
+ 12 Bigelowiella_natans_gca_000002455              2.39
+ 13 Blastocystis_hominis                           2.85
+ 14 Bodo_saltans                                   2.92
+ 15 Capsaspora_owczarzaki_atcc_30864               2.85
+ 16 Chroomonas_mesostigmatica_ccmp1168             2.44
+ 17 Cryptomonas_paramecium                         2.40
+ 18 Cryptosporidium_muris_rn66                     2.55
+ 19 Cryptosporidium_parvum                         2.68
+ 20 Cryptosporidium_parvum_iowa_ii                 2.64
+ 21 Cyclospora_cayetanensis                        2.91
+ 22 Dictyostelium_discoideum                       2.37
+ 23 Dictyostelium_fasciculatum                     2.76
+ 24 Dictyostelium_lacteum                          2.61
+ 25 Dictyostelium_purpureum                        2.54
+ 26 Eimeria_acervulina                             2.86
+ 27 Eimeria_brunetti                               2.76
+ 28 Eimeria_maxima                                 2.87
+ 29 Eimeria_mitis                                  2.72
+ 30 Eimeria_necatrix                               2.80
+ 31 Eimeria_praecox                                2.71
+ 32 Eimeria_tenella                                2.88
+ 33 Eimeria_tenella_gca_000499545                  2.82
+ 34 Emiliania_huxleyi                              2.45
+ 35 Entamoeba_dispar_saw760                        2.40
+ 36 Entamoeba_histolytica                          2.42
+ 37 Entamoeba_histolytica_gca_001662325            2.42
+ 38 Entamoeba_histolytica_hm_1_imss_a              2.41
+ 39 Entamoeba_histolytica_hm_1_imss_b              2.41
+ 40 Entamoeba_histolytica_hm_3_imss                2.41
+ 41 Entamoeba_histolytica_ku27                     2.42
+ 42 Entamoeba_invadens_ip1                         2.82
+ 43 Entamoeba_nuttalli_p19                         2.42
+ 44 Fonticula_alba                                 2.52
+ 45 Giardia_intestinalis                           2.92
+ 46 Giardia_intestinalis_assemblage_b              2.93
+ 47 Giardia_intestinalis_atcc_50581                2.93
+ 48 Giardia_intestinalis_gca_000498715             2.92
+ 49 Giardia_lamblia                                2.91
+ 50 Giardia_lamblia_p15                            2.92
+ 51 Gregarina_niphandrodes                         2.90
+ 52 Guillardia_theta                               2.84
+ 53 Guillardia_theta_gca_000002975                 2.30
+ 54 Hammondia_hammondi                             2.89
+ 55 Hyaloperonospora_arabidopsidis                 2.91
+ 56 Ichthyophthirius_multifiliis                   2.29
+ 57 Leishmania_braziliensis_mhom_br_75_m2904       2.79
+ 58 Leishmania_donovani_bpk282a1                   2.73
+ 59 Leishmania_infantum_jpcm5                      2.72
+ 60 Leishmania_major                               2.72
+ 61 Leishmania_mexicana_mhom_gt_2001_u1103         2.73
+ 62 Leishmania_panamensis                          2.80
+ 63 Leptomonas_pyrrhocoris                         2.67
+ 64 Leptomonas_seymouri                            2.79
+ 65 Lotharella_oceanica                            2.45
+ 66 Monosiga_brevicollis_mx1                       2.86
+ 67 Naegleria_gruberi                              2.72
+ 68 Nannochloropsis_gaditana                       2.86
+ 69 Nannochloropsis_gaditana_ccmp526               2.82
+ 70 Oxytricha_trifallax                            2.74
+ 71 Oxytricha_trifallax_gca_000711775              2.74
+ 72 Paramecium_tetraurelia                         2.61
+ 73 Paulinella_chromatophora                       2.80
+ 74 Perkinsela_sp_ccap_1560_4                      2.93
+ 75 Perkinsus_marinus_atcc_50983                   2.93
+ 76 Phaeodactylum_tricornutum                      2.95
+ 77 Phytomonas_sp_isolate_em1                      2.88
+ 78 Phytomonas_sp_isolate_hart1                    2.86
+ 79 Phytophthora_infestans                         2.88
+ 80 Phytophthora_kernoviae                         2.84
+ 81 Phytophthora_lateralis                         2.74
+ 82 Phytophthora_nicotianae                        2.87
+ 83 Phytophthora_nicotianae_gca_001483015          2.88
+ 84 Phytophthora_parasitica                        2.89
+ 85 Phytophthora_parasitica_cj01a1                 2.89
+ 86 Phytophthora_parasitica_gca_000509465          2.89
+ 87 Phytophthora_parasitica_gca_000509485          2.89
+ 88 Phytophthora_parasitica_gca_000509505          2.89
+ 89 Phytophthora_parasitica_gca_000509525          2.89
+ 90 Phytophthora_parasitica_inra_310               2.89
+ 91 Phytophthora_parasitica_p10297                 2.89
+ 92 Phytophthora_parasitica_p1976                  2.89
+ 93 Phytophthora_ramorum                           2.74
+ 94 Phytophthora_sojae                             2.72
+ 95 Plasmodiophora_brassicae                       2.71
+ 96 Plasmodium_berghei                             2.34
+ 97 Plasmodium_berghei_gca_000005395               2.33
+ 98 Plasmodium_berghei_gca_900044335               2.20
+ 99 Plasmodium_chabaudi                            2.42
+100 Plasmodium_chabaudi_chabaudi_gca_000003075     2.35
+101 Plasmodium_coatneyi                            2.85
+102 Plasmodium_cynomolgi_strain_b                  2.81
+103 Plasmodium_falciparum                          2.34
+104 Plasmodium_falciparum_7g8                      2.31
+105 Plasmodium_falciparum_camp_malaysia            2.31
+106 Plasmodium_falciparum_dd2                      2.34
+107 Plasmodium_falciparum_fch_4                    2.31
+108 Plasmodium_falciparum_hb3                      2.34
+109 Plasmodium_falciparum_igh_cr14                 2.32
+110 Plasmodium_falciparum_malips096_e11            2.31
+111 Plasmodium_falciparum_nf135_5_c10              2.31
+112 Plasmodium_falciparum_nf54                     2.31
+113 Plasmodium_falciparum_palo_alto_uganda         2.31
+114 Plasmodium_falciparum_raj116                   2.30
+115 Plasmodium_falciparum_santa_lucia              2.31
+116 Plasmodium_falciparum_tanzania_2000708_        2.32
+117 Plasmodium_falciparum_ugt5_1                   2.32
+118 Plasmodium_falciparum_vietnam_oak_knoll_fvo_   2.31
+119 Plasmodium_fragile                             2.83
+120 Plasmodium_gaboni                              2.28
+121 Plasmodium_inui_san_antonio_1                  2.87
+122 Plasmodium_knowlesi                            2.85
+123 Plasmodium_malariae                            2.55
+124 Plasmodium_ovale_curtisi                       2.64
+125 Plasmodium_ovale_curtisi_gca_900088555         2.67
+126 Plasmodium_ovale_wallikeri                     2.71
+127 Plasmodium_ovale_wallikeri_gca_900088485       2.70
+128 Plasmodium_reichenowi                          2.34
+129 Plasmodium_reichenowi_gca_001601855            2.31
+130 Plasmodium_vinckei_petteri                     2.41
+131 Plasmodium_vinckei_vinckei                     2.41
+132 Plasmodium_vivax                               2.83
+133 Plasmodium_vivax_brazil_i                      2.75
+134 Plasmodium_vivax_india_vii                     2.77
+135 Plasmodium_vivax_mauritania_i                  2.76
+136 Plasmodium_vivax_north_korean                  2.75
+137 Plasmodium_yoelii                              2.34
+138 Plasmodium_yoelii_17x                          2.35
+139 Plasmodium_yoelii_gca_900002395                2.34
+140 Plasmodium_yoelii_yoelii                       2.33
+141 Plasmopara_halstedii                           2.93
+142 Polysphondylium_pallidum_pn500                 2.79
+143 Pseudocohnilembus_persalinus                   2.37
+144 Pythium_aphanidermatum                         2.84
+145 Pythium_arrhenomanes                           2.69
+146 Pythium_irregulare                             2.71
+147 Pythium_iwayamai                               2.61
+148 Pythium_ultimum                                2.77
+149 Pythium_vexans                                 2.58
+150 Reticulomyxa_filosa                            2.76
+151 Salpingoeca_rosetta                            2.77
+152 Saprolegnia_diclina_vs20                       2.63
+153 Saprolegnia_parasitica_cbs_223_65              2.61
+154 Sphaeroforma_arctica_jp610                     2.93
+155 Spironucleus_salmonicida                       2.66
+156 Strigomonas_culicis                            2.55
+157 Stylonychia_lemnae                             2.72
+158 Tetrahymena_thermophila                        2.52
+159 Thalassiosira_oceanica                         2.83
+160 Thalassiosira_oceanica_ccmp1005                2.50
+161 Thalassiosira_pseudonana                       2.95
+162 Thecamonas_trahens_atcc_50062                  2.64
+163 Theileria_annulata                             2.74
+164 Theileria_equi_strain_wa                       2.87
+165 Theileria_orientalis_strain_shintoku           2.85
+166 Theileria_parva                                2.81
+167 Toxoplasma_gondii                              2.90
+168 Toxoplasma_gondii_ari                          2.89
+169 Toxoplasma_gondii_fou                          2.89
+170 Toxoplasma_gondii_gab2_2007_gal_dom2           2.90
+171 Toxoplasma_gondii_gt1                          2.90
+172 Toxoplasma_gondii_mas                          2.89
+173 Toxoplasma_gondii_p89                          2.89
+174 Toxoplasma_gondii_rub                          2.89
+175 Toxoplasma_gondii_tgcatprc2                    2.89
+176 Toxoplasma_gondii_vand                         2.90
+177 Toxoplasma_gondii_veg                          2.91
+178 Trichomonas_vaginalis_g3                       2.74
+179 Trypanosoma_brucei                             2.94
+180 Trypanosoma_brucei_brucei_treu927              2.94
+181 Trypanosoma_cruzi                              2.91
+182 Trypanosoma_cruzi_dm28c                        2.92
+183 Trypanosoma_cruzi_gca_000188675                2.91
+184 Trypanosoma_cruzi_marinkellei                  2.91
+185 Trypanosoma_rangeli_sc58                       2.87
+186 Vitrella_brassicaformis_ccmp3155               2.74
+> write.csv(pr186, file = "pr186.csv", row.names = FALSE)
 
+> vertebra_all <- read.table("release_7.txt", header = TRUE)
+> vb_Cluster <- vertebra_all %>% group_by(Species)
+> vb085 <- vb_Cluster %>% summarise(TCBShE = harmonic.mean(TCBShE)) %>% print(n = Inf)
+# A tibble: 85 x 2
+   Species                    TCBShE
+   <chr>                       <dbl>
+ 1 Ailuropoda_melanoleuca       2.81
+ 2 Anas_platyrhynchos           2.80
+ 3 Anolis_carolinensis          2.86
+ 4 Astyanax_mexicanus           2.89
+ 5 Bos_taurus                   2.80
+ 6 Caenorhabditis_elegans       2.89
+ 7 Callithrix_jacchus           2.84
+ 8 Canis_familiaris             2.80
+ 9 Cavia_porcellus              2.83
+10 Chlorocebus_sabaeus          2.82
+11 Choloepus_hoffmanni          2.87
+12 Ciona_intestinalis           2.88
+13 Ciona_savignyi               2.92
+14 Danio_rerio                  2.92
+15 Dasypus_novemcinctus         2.78
+16 Dipodomys_ordii              2.82
+17 Drosophila_melanogaster      2.84
+18 Echinops_telfairi            2.80
+19 Equus_caballus               2.82
+20 Erinaceus_europaeus          2.83
+21 Felis_catus                  2.81
+22 Ficedula_albicollis          2.78
+23 Gadus_morhua                 2.68
+24 Gallus_gallus                2.83
+25 Gasterosteus_aculeatus       2.79
+26 Gorilla_gorilla              2.82
+27 Homo_sapiens                 2.82
+28 Ictidomys_tridecemlineatus   2.83
+29 Latimeria_chalumnae          2.91
+30 Lepisosteus_oculatus         2.82
+31 Loxodonta_africana           2.84
+32 Macaca_mulatta               2.84
+33 Macropus_eugenii             2.89
+34 Meleagris_gallopavo          2.86
+35 Microcebus_murinus           2.80
+36 Monodelphis_domestica        2.87
+37 Mus_musculus                 2.88
+38 Mus_musculus_129s1svimj      2.88
+39 Mus_musculus_aj              2.88
+40 Mus_musculus_akrj            2.88
+41 Mus_musculus_balbcj          2.88
+42 Mus_musculus_c3hhej          2.88
+43 Mus_musculus_c57bl6nj        2.88
+44 Mus_musculus_casteij         2.88
+45 Mus_musculus_cbaj            2.88
+46 Mus_musculus_dba2j           2.88
+47 Mus_musculus_fvbnj           2.88
+48 Mus_musculus_lpj             2.88
+49 Mus_musculus_nodshiltj       2.88
+50 Mus_musculus_nzohlltj        2.88
+51 Mus_musculus_pwkphj          2.88
+52 Mus_musculus_wsbeij          2.88
+53 Mus_spretus_spreteij         2.88
+54 Mustela_putorius_furo        2.81
+55 Myotis_lucifugus             2.80
+56 Nomascus_leucogenys          2.83
+57 Ochotona_princeps            2.80
+58 Oreochromis_niloticus        2.91
+59 Ornithorhynchus_anatinus     2.77
+60 Oryctolagus_cuniculus        2.77
+61 Oryzias_latipes              2.87
+62 Otolemur_garnettii           2.86
+63 Ovis_aries                   2.82
+64 Pan_troglodytes              2.82
+65 Papio_anubis                 2.83
+66 Pelodiscus_sinensis          2.85
+67 Petromyzon_marinus           2.66
+68 Poecilia_formosa             2.86
+69 Pongo_abelii                 2.83
+70 Procavia_capensis            2.84
+71 Pteropus_vampyrus            2.81
+72 Rattus_norvegicus            2.88
+73 Saccharomyces_cerevisiae     2.87
+74 Sarcophilus_harrisii         2.87
+75 Sorex_araneus                2.78
+76 Sus_scrofa                   2.81
+77 Taeniopygia_guttata          2.80
+78 Takifugu_rubripes            2.85
+79 Tarsius_syrichta             2.86
+80 Tetraodon_nigroviridis       2.78
+81 Tupaia_belangeri             2.83
+82 Tursiops_truncatus           2.80
+83 Vicugna_pacos                2.87
+84 Xenopus_tropicalis           2.92
+85 Xiphophorus_maculatus        2.85
+> write.csv(vb085, file = "vb085.csv", row.names = FALSE)
 
+# The Written (Supplementary-Files) are uploaded Onto this GC123e GitHub Repository! Happy deciphering for which Specie(s) HM-TCBShE(Transcripts)->e in a Clade!!!
