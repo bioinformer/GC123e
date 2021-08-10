@@ -65,7 +65,7 @@ Type 'q()' to quit R.
 Loading required package: pacman 
 > pacman::p_load(psych, dplyr) 
 
-> library(psych)
+> library(psych)   # Version 2.1.6
 
 > fungi_all <- read.table("fungi_7.txt", header = TRUE) 
 > nrow(fungi_all) 
