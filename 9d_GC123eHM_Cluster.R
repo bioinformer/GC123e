@@ -1,4 +1,4 @@
-$ R # In "pwd" as ./GC123e # OR
+$ R # In "pwd" as ./GC123e # OR preferably...
 
 # Load R-Studio on Ubuntu 20.04 LTS Desktop,     https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.4.1717-amd64.deb
 
