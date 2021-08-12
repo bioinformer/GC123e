@@ -35,7 +35,7 @@ NOTE: In the Classic Example outlined in Youtube video above, Overall Triplet-Bl
 Similarly, this leads to our Bold Hypothesis that Actual/ Expected TCBShE after Error-correction= 
 (e/3)*3 = NAPIER's constant (Upto 5 Decimal Places)= 2.71828 , which is what is the EXACT estimate.
 
-# If you wish to Peruse this Work, and its further Developments on GitHub (GC123e), please Cite BOTH the Original Research Works below:-
+# If you wish to Peruse this Work, and its further Developments on GitHub (GC123e), please Cite the Original Research Works below:-
 Praharshit Sharma, & Kuralayanapalya Puttahonnappa Suresh. (2021). Source-Code: Triplet Codon Block Shannon Entropy (TCBShE) in terms of GC(1,2,3)% equates to Napier's Constant for Model Organisms, and Harmonically Averages to same approximately: a Penta-Clado-genic Quantitative Survey across ~14.45 million Transcripts Clustered by 1118 Species (v-2.71828). Zenodo. https://doi.org/10.5281/zenodo.5137183
 
 Praharshit Sharma, Kuralayanapalya Puttahonnappa Suresh, Divakar Hemadri, & Sharanagouda Patil. (2021). PRE-PRINT: Triplet Codon Block Shannon Entropy (TCBShE) in terms of GC(1,2,3)% equates to Napier Constant for Model Organisms, and Harmonically Averages to same approximately: a Penta-Clado-genic Quantitative Survey across ~14.45 million Transcripts Clustered by 1118 Species (Pre-Print_Stage). Zenodo. https://doi.org/10.5281/zenodo.5184731
