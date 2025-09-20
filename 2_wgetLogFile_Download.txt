@@ -658,6 +658,32 @@ FINISHED --2025-09-20 15:22:12--
 Total wall clock time: 23s
 Downloaded: 9 files, 203M in 3.1s (65.2 MB/s)
 
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/vertebrae_{10..11}.txt
+--2025-09-20 15:22:28--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/vertebrae_10.txt
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 23628773 (23M) [text/plain]
+Saving to: ‘vertebrae_10.txt’
+
+vertebrae_10.txt                                   100%[===============================================================================================================>]  22.53M  44.4MB/s    in 0.5s    
+
+2025-09-20 15:22:31 (44.4 MB/s) - ‘vertebrae_10.txt’ saved [23628773/23628773]
+
+--2025-09-20 15:22:31--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/vertebrae_11.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 6814979 (6.5M) [text/plain]
+Saving to: ‘vertebrae_11.txt’
+
+vertebrae_11.txt                                   100%[===============================================================================================================>]   6.50M  29.3MB/s    in 0.2s    
+
+2025-09-20 15:22:32 (29.3 MB/s) - ‘vertebrae_11.txt’ saved [6814979/6814979]
+
+FINISHED --2025-09-20 15:22:32--
+Total wall clock time: 3.5s
+Downloaded: 2 files, 29M in 0.7s (39.8 MB/s)
+
 
 
 
