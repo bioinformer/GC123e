@@ -466,6 +466,102 @@ FINISHED --2025-09-20 15:16:51--
 Total wall clock time: 5.1s
 Downloaded: 2 files, 45M in 1.2s (38.3 MB/s)
 
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/protists_{1..9}.txt
+--2025-09-20 15:19:14--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/protists_1.txt
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.108.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21359869 (20M) [text/plain]
+Saving to: ‘protists_1.txt’
+
+protists_1.txt                                     100%[===============================================================================================================>]  20.37M  28.9MB/s    in 0.7s    
+
+2025-09-20 15:19:17 (28.9 MB/s) - ‘protists_1.txt’ saved [21359869/21359869]
+
+--2025-09-20 15:19:17--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/protists_2.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 22117648 (21M) [text/plain]
+Saving to: ‘protists_2.txt’
+
+protists_2.txt                                     100%[===============================================================================================================>]  21.09M  45.1MB/s    in 0.5s    
+
+2025-09-20 15:19:19 (45.1 MB/s) - ‘protists_2.txt’ saved [22117648/22117648]
+
+--2025-09-20 15:19:19--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/protists_3.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 24204401 (23M) [text/plain]
+Saving to: ‘protists_3.txt’
+
+protists_3.txt                                     100%[===============================================================================================================>]  23.08M  54.8MB/s    in 0.4s    
+
+2025-09-20 15:19:22 (54.8 MB/s) - ‘protists_3.txt’ saved [24204401/24204401]
+
+--2025-09-20 15:19:22--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/protists_4.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23401495 (22M) [text/plain]
+Saving to: ‘protists_4.txt’
+
+protists_4.txt                                     100%[===============================================================================================================>]  22.32M  47.5MB/s    in 0.5s    
+
+2025-09-20 15:19:25 (47.5 MB/s) - ‘protists_4.txt’ saved [23401495/23401495]
+
+--2025-09-20 15:19:25--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/protists_5.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23695697 (23M) [text/plain]
+Saving to: ‘protists_5.txt’
+
+protists_5.txt                                     100%[===============================================================================================================>]  22.60M  48.3MB/s    in 0.5s    
+
+2025-09-20 15:19:27 (48.3 MB/s) - ‘protists_5.txt’ saved [23695697/23695697]
+
+--2025-09-20 15:19:27--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/protists_6.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 22320361 (21M) [text/plain]
+Saving to: ‘protists_6.txt’
+
+protists_6.txt                                     100%[===============================================================================================================>]  21.29M  50.7MB/s    in 0.4s    
+
+2025-09-20 15:19:30 (50.7 MB/s) - ‘protists_6.txt’ saved [22320361/22320361]
+
+--2025-09-20 15:19:30--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/protists_7.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23255526 (22M) [text/plain]
+Saving to: ‘protists_7.txt’
+
+protists_7.txt                                     100%[===============================================================================================================>]  22.18M  66.4MB/s    in 0.3s    
+
+2025-09-20 15:19:32 (66.4 MB/s) - ‘protists_7.txt’ saved [23255526/23255526]
+
+--2025-09-20 15:19:32--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/protists_8.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 22808288 (22M) [text/plain]
+Saving to: ‘protists_8.txt’
+
+protists_8.txt                                     100%[===============================================================================================================>]  21.75M  59.0MB/s    in 0.4s    
+
+2025-09-20 15:19:35 (59.0 MB/s) - ‘protists_8.txt’ saved [22808288/22808288]
+
+--2025-09-20 15:19:35--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/protists_9.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 2262798 (2.2M) [text/plain]
+Saving to: ‘protists_9.txt’
+
+protists_9.txt                                     100%[===============================================================================================================>]   2.16M  --.-KB/s    in 0.03s   
+
+2025-09-20 15:19:35 (73.8 MB/s) - ‘protists_9.txt’ saved [2262798/2262798]
+
+FINISHED --2025-09-20 15:19:35--
+Total wall clock time: 21s
+Downloaded: 9 files, 177M in 3.7s (48.0 MB/s)
+
 
 
 
