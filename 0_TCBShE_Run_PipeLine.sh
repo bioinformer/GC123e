@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ueo pipefail
+
 chmod a+x 1_GC123_Download.sh ;
 bash 1_GC123_Download.sh ;
 
@@ -10,8 +12,8 @@ bash 3_Extract_GC123_files.sh ;
 
 sleep 5 ;
 
-chmod a+x 4_Local_Copies_input.sh  ;
-bash 4_Local_Copies_input.sh  ;
+# chmod a+x 4_Local_Copies_input.sh  ;
+# bash 4_Local_Copies_input.sh  ;
 
 sleep 5 ;
 
