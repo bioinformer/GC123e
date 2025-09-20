@@ -1,56 +1,282 @@
-(Call=BioInfo-Help_+917995158734) bioinformaticsharma@bioinformaticsharma-CNBIC-EAN1:~/BDGC/GCEVOBASE$ bash DWLGC.sh
---2021-07-18 00:42:19--  http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_release_88.GCevobase.pc.download.GC4d.txt.gz
-Resolving www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)... 34.212.103.43
-Connecting to www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)|34.212.103.43|:80... connected.
+$ wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{1..9}.txt
+--2025-09-20 12:51:45--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_1.txt
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 58038231 (55M) [application/x-gzip]
-Saving to: ‘Ensembl_release_88.GCevobase.pc.download.GC4d.txt.gz’
+Length: 23375770 (22M) [text/plain]
+Saving to: ‘fungi_1.txt’
 
-Ensembl_release_88.GCevobase.pc.download.GC4d.txt. 100%[===============================================================================================================>]  55.35M   107KB/s    in 19m 36s
+fungi_1.txt                                        100%[===============================================================================================================>]  22.29M  45.2MB/s    in 0.5s    
 
-2021-07-18 01:01:56 (48.2 KB/s) - ‘Ensembl_release_88.GCevobase.pc.download.GC4d.txt.gz’ saved [58038231/58038231]
+2025-09-20 12:51:48 (45.2 MB/s) - ‘fungi_1.txt’ saved [23375770/23375770]
 
---2021-07-18 01:01:56--  http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt.gz
-Resolving www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)... 34.212.103.43
-Connecting to www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)|34.212.103.43|:80... connected.
+--2025-09-20 12:51:48--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_2.txt
+Reusing existing connection to raw.githubusercontent.com:443.
 HTTP request sent, awaiting response... 200 OK
-Length: 30680334 (29M) [application/x-gzip]
-Saving to: ‘Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt.gz’
+Length: 23906955 (23M) [text/plain]
+Saving to: ‘fungi_2.txt’
 
-Ensembl_Metazoa_release_35.GCevobase.pc.download.G 100%[===============================================================================================================>]  29.26M  61.6KB/s    in 10m 17s
+fungi_2.txt                                        100%[===============================================================================================================>]  22.80M  45.3MB/s    in 0.5s    
 
-2021-07-18 01:12:14 (48.6 KB/s) - ‘Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt.gz’ saved [30680334/30680334]
+2025-09-20 12:51:51 (45.3 MB/s) - ‘fungi_2.txt’ saved [23906955/23906955]
 
---2021-07-18 01:12:14--  http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt.gz
-Resolving www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)... 34.212.103.43
-Connecting to www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)|34.212.103.43|:80... connected.
+--2025-09-20 12:51:51--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_3.txt
+Reusing existing connection to raw.githubusercontent.com:443.
 HTTP request sent, awaiting response... 200 OK
-Length: 45994737 (44M) [application/x-gzip]
-Saving to: ‘Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt.gz’
+Length: 22906545 (22M) [text/plain]
+Saving to: ‘fungi_3.txt’
 
-Ensembl_Plants_release_35.GCevobase.pc.fix.downloa 100%[===============================================================================================================>]  43.86M  55.0KB/s    in 15m 43s
+fungi_3.txt                                        100%[===============================================================================================================>]  21.84M  49.0MB/s    in 0.4s    
 
-2021-07-18 01:27:57 (47.6 KB/s) - ‘Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt.gz’ saved [45994737/45994737]
+2025-09-20 12:51:53 (49.0 MB/s) - ‘fungi_3.txt’ saved [22906545/22906545]
 
---2021-07-18 01:27:57--  http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt.gz
-Resolving www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)... 34.212.103.43
-Connecting to www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)|34.212.103.43|:80... connected.
+--2025-09-20 12:51:53--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_4.txt
+Reusing existing connection to raw.githubusercontent.com:443.
 HTTP request sent, awaiting response... 200 OK
-Length: 154238504 (147M) [application/x-gzip]
-Saving to: ‘Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt.gz’
+Length: 23015892 (22M) [text/plain]
+Saving to: ‘fungi_4.txt’
 
-Ensembl_Fungi_release_35.GCevobase.pc.download.GC4 100%[===============================================================================================================>] 147.09M  65.4KB/s    in 54m 19s
+fungi_4.txt                                        100%[===============================================================================================================>]  21.95M  41.7MB/s    in 0.5s    
 
-2021-07-18 02:22:17 (46.2 KB/s) - ‘Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt.gz’ saved [154238504/154238504]
+2025-09-20 12:51:56 (41.7 MB/s) - ‘fungi_4.txt’ saved [23015892/23015892]
 
---2021-07-18 02:22:17--  http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt.gz
-Resolving www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)... 34.212.103.43
-Connecting to www.nextgenbioinformatics.org (www.nextgenbioinformatics.org)|34.212.103.43|:80... connected.
+--2025-09-20 12:51:56--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_5.txt
+Reusing existing connection to raw.githubusercontent.com:443.
 HTTP request sent, awaiting response... 200 OK
-Length: 46321942 (44M) [application/x-gzip]
-Saving to: ‘Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt.gz’
+Length: 23450868 (22M) [text/plain]
+Saving to: ‘fungi_5.txt’
 
-Ensembl_Protists_release_35.GCevobase.pc.download. 100%[===============================================================================================================>]  44.18M  50.4KB/s    in 16m 41s
+fungi_5.txt                                        100%[===============================================================================================================>]  22.36M  41.2MB/s    in 0.5s    
 
-2021-07-18 02:38:59 (45.2 KB/s) - ‘Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt.gz’ saved [46321942/46321942]
+2025-09-20 12:51:58 (41.2 MB/s) - ‘fungi_5.txt’ saved [23450868/23450868]
+
+--2025-09-20 12:51:58--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_6.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23732264 (23M) [text/plain]
+Saving to: ‘fungi_6.txt’
+
+fungi_6.txt                                        100%[===============================================================================================================>]  22.63M  76.5MB/s    in 0.3s    
+
+2025-09-20 12:52:01 (76.5 MB/s) - ‘fungi_6.txt’ saved [23732264/23732264]
+
+--2025-09-20 12:52:01--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_7.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 22434250 (21M) [text/plain]
+Saving to: ‘fungi_7.txt’
+
+fungi_7.txt                                        100%[===============================================================================================================>]  21.39M  84.9MB/s    in 0.3s    
+
+2025-09-20 12:52:03 (84.9 MB/s) - ‘fungi_7.txt’ saved [22434250/22434250]
+
+--2025-09-20 12:52:03--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_8.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23224961 (22M) [text/plain]
+Saving to: ‘fungi_8.txt’
+
+fungi_8.txt                                        100%[===============================================================================================================>]  22.15M  56.7MB/s    in 0.4s    
+
+2025-09-20 12:52:05 (56.7 MB/s) - ‘fungi_8.txt’ saved [23224961/23224961]
+
+--2025-09-20 12:52:05--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_9.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 26101742 (25M) [text/plain]
+Saving to: ‘fungi_9.txt’
+
+fungi_9.txt                                        100%[===============================================================================================================>]  24.89M  41.9MB/s    in 0.6s    
+
+2025-09-20 12:52:09 (41.9 MB/s) - ‘fungi_9.txt’ saved [26101742/26101742]
+
+FINISHED --2025-09-20 12:52:09--
+Total wall clock time: 23s
+Downloaded: 9 files, 202M in 4.0s (50.0 MB/s)
+
+$ wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{11..28}.txt
+--2025-09-20 12:54:32--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_11.txt
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.111.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 23805179 (23M) [text/plain]
+Saving to: ‘fungi_11.txt’
+
+fungi_11.txt                                       100%[===============================================================================================================>]  22.70M   101MB/s    in 0.2s    
+
+2025-09-20 12:54:35 (101 MB/s) - ‘fungi_11.txt’ saved [23805179/23805179]
+
+--2025-09-20 12:54:35--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_12.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23400822 (22M) [text/plain]
+Saving to: ‘fungi_12.txt’
+
+fungi_12.txt                                       100%[===============================================================================================================>]  22.32M  44.4MB/s    in 0.5s    
+
+2025-09-20 12:54:38 (44.4 MB/s) - ‘fungi_12.txt’ saved [23400822/23400822]
+
+--2025-09-20 12:54:38--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_13.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23751018 (23M) [text/plain]
+Saving to: ‘fungi_13.txt’
+
+fungi_13.txt                                       100%[===============================================================================================================>]  22.65M  58.5MB/s    in 0.4s    
+
+2025-09-20 12:54:40 (58.5 MB/s) - ‘fungi_13.txt’ saved [23751018/23751018]
+
+--2025-09-20 12:54:40--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_14.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23761022 (23M) [text/plain]
+Saving to: ‘fungi_14.txt’
+
+fungi_14.txt                                       100%[===============================================================================================================>]  22.66M  55.3MB/s    in 0.4s    
+
+2025-09-20 12:54:43 (55.3 MB/s) - ‘fungi_14.txt’ saved [23761022/23761022]
+
+--2025-09-20 12:54:43--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_15.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23033289 (22M) [text/plain]
+Saving to: ‘fungi_15.txt’
+
+fungi_15.txt                                       100%[===============================================================================================================>]  21.97M  59.1MB/s    in 0.4s    
+
+2025-09-20 12:54:45 (59.1 MB/s) - ‘fungi_15.txt’ saved [23033289/23033289]
+
+--2025-09-20 12:54:45--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_16.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23189584 (22M) [text/plain]
+Saving to: ‘fungi_16.txt’
+
+fungi_16.txt                                       100%[===============================================================================================================>]  22.12M  82.3MB/s    in 0.3s    
+
+2025-09-20 12:54:48 (82.3 MB/s) - ‘fungi_16.txt’ saved [23189584/23189584]
+
+--2025-09-20 12:54:48--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_17.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 24172638 (23M) [text/plain]
+Saving to: ‘fungi_17.txt’
+
+fungi_17.txt                                       100%[===============================================================================================================>]  23.05M  81.1MB/s    in 0.3s    
+
+2025-09-20 12:54:50 (81.1 MB/s) - ‘fungi_17.txt’ saved [24172638/24172638]
+
+--2025-09-20 12:54:50--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_18.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23513503 (22M) [text/plain]
+Saving to: ‘fungi_18.txt’
+
+fungi_18.txt                                       100%[===============================================================================================================>]  22.42M  58.6MB/s    in 0.4s    
+
+2025-09-20 12:54:53 (58.6 MB/s) - ‘fungi_18.txt’ saved [23513503/23513503]
+
+--2025-09-20 12:54:53--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_19.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 25215376 (24M) [text/plain]
+Saving to: ‘fungi_19.txt’
+
+fungi_19.txt                                       100%[===============================================================================================================>]  24.05M  80.1MB/s    in 0.3s    
+
+2025-09-20 12:54:56 (80.1 MB/s) - ‘fungi_19.txt’ saved [25215376/25215376]
+
+--2025-09-20 12:54:56--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_20.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 25758887 (25M) [text/plain]
+Saving to: ‘fungi_20.txt’
+
+fungi_20.txt                                       100%[===============================================================================================================>]  24.57M  77.1MB/s    in 0.3s    
+
+2025-09-20 12:54:59 (77.1 MB/s) - ‘fungi_20.txt’ saved [25758887/25758887]
+
+--2025-09-20 12:54:59--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_21.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 24713968 (24M) [text/plain]
+Saving to: ‘fungi_21.txt’
+
+fungi_21.txt                                       100%[===============================================================================================================>]  23.57M  73.6MB/s    in 0.3s    
+
+2025-09-20 12:55:01 (73.6 MB/s) - ‘fungi_21.txt’ saved [24713968/24713968]
+
+--2025-09-20 12:55:01--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_22.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23963182 (23M) [text/plain]
+Saving to: ‘fungi_22.txt’
+
+fungi_22.txt                                       100%[===============================================================================================================>]  22.85M  21.6MB/s    in 1.1s    
+
+2025-09-20 12:55:04 (21.6 MB/s) - ‘fungi_22.txt’ saved [23963182/23963182]
+
+--2025-09-20 12:55:04--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_23.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 22777180 (22M) [text/plain]
+Saving to: ‘fungi_23.txt’
+
+fungi_23.txt                                       100%[===============================================================================================================>]  21.72M  47.3MB/s    in 0.5s    
+
+2025-09-20 12:55:07 (47.3 MB/s) - ‘fungi_23.txt’ saved [22777180/22777180]
+
+--2025-09-20 12:55:07--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_24.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 22963933 (22M) [text/plain]
+Saving to: ‘fungi_24.txt’
+
+fungi_24.txt                                       100%[===============================================================================================================>]  21.90M  65.5MB/s    in 0.3s    
+
+2025-09-20 12:55:09 (65.5 MB/s) - ‘fungi_24.txt’ saved [22963933/22963933]
+
+--2025-09-20 12:55:09--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_25.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23183587 (22M) [text/plain]
+Saving to: ‘fungi_25.txt’
+
+fungi_25.txt                                       100%[===============================================================================================================>]  22.11M  76.8MB/s    in 0.3s    
+
+2025-09-20 12:55:12 (76.8 MB/s) - ‘fungi_25.txt’ saved [23183587/23183587]
+
+--2025-09-20 12:55:12--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_26.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 22236149 (21M) [text/plain]
+Saving to: ‘fungi_26.txt’
+
+fungi_26.txt                                       100%[===============================================================================================================>]  21.21M  96.2MB/s    in 0.2s    
+
+2025-09-20 12:55:14 (96.2 MB/s) - ‘fungi_26.txt’ saved [22236149/22236149]
+
+--2025-09-20 12:55:14--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_27.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23614506 (23M) [text/plain]
+Saving to: ‘fungi_27.txt’
+
+fungi_27.txt                                       100%[===============================================================================================================>]  22.52M  76.2MB/s    in 0.3s    
+
+2025-09-20 12:55:17 (76.2 MB/s) - ‘fungi_27.txt’ saved [23614506/23614506]
+
+--2025-09-20 12:55:17--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_28.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 2973912 (2.8M) [text/plain]
+Saving to: ‘fungi_28.txt’
+
+fungi_28.txt                                       100%[===============================================================================================================>]   2.84M  --.-KB/s    in 0.04s   
+
+2025-09-20 12:55:17 (71.9 MB/s) - ‘fungi_28.txt’ saved [2973912/2973912]
+
+FINISHED --2025-09-20 12:55:17--
+Total wall clock time: 45s
+Downloaded: 18 files, 387M in 6.5s (59.9 MB/s)
 
