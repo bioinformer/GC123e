@@ -280,3 +280,70 @@ FINISHED --2025-09-20 12:55:17--
 Total wall clock time: 45s
 Downloaded: 18 files, 387M in 6.5s (59.9 MB/s)
 
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/metazoa_{1..6}.txt
+--2025-09-20 15:06:32--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/metazoa_1.txt
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21923816 (21M) [text/plain]
+Saving to: ‘metazoa_1.txt’
+
+metazoa_1.txt                                      100%[===============================================================================================================>]  20.91M  90.5MB/s    in 0.2s    
+
+2025-09-20 15:06:34 (90.5 MB/s) - ‘metazoa_1.txt’ saved [21923816/21923816]
+
+--2025-09-20 15:06:34--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/metazoa_2.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 21719378 (21M) [text/plain]
+Saving to: ‘metazoa_2.txt’
+
+metazoa_2.txt                                      100%[===============================================================================================================>]  20.71M  41.6MB/s    in 0.5s    
+
+2025-09-20 15:06:37 (41.6 MB/s) - ‘metazoa_2.txt’ saved [21719378/21719378]
+
+--2025-09-20 15:06:37--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/metazoa_3.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 21010957 (20M) [text/plain]
+Saving to: ‘metazoa_3.txt’
+
+metazoa_3.txt                                      100%[===============================================================================================================>]  20.04M  54.8MB/s    in 0.4s    
+
+2025-09-20 15:06:39 (54.8 MB/s) - ‘metazoa_3.txt’ saved [21010957/21010957]
+
+--2025-09-20 15:06:39--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/metazoa_4.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 22273290 (21M) [text/plain]
+Saving to: ‘metazoa_4.txt’
+
+metazoa_4.txt                                      100%[===============================================================================================================>]  21.24M  61.9MB/s    in 0.3s    
+
+2025-09-20 15:06:41 (61.9 MB/s) - ‘metazoa_4.txt’ saved [22273290/22273290]
+
+--2025-09-20 15:06:41--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/metazoa_5.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 22342382 (21M) [text/plain]
+Saving to: ‘metazoa_5.txt’
+
+metazoa_5.txt                                      100%[===============================================================================================================>]  21.31M  56.0MB/s    in 0.4s    
+
+2025-09-20 15:06:44 (56.0 MB/s) - ‘metazoa_5.txt’ saved [22342382/22342382]
+
+--2025-09-20 15:06:44--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/metazoa_6.txt
+Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 10026603 (9.6M) [text/plain]
+Saving to: ‘metazoa_6.txt’
+
+metazoa_6.txt                                      100%[===============================================================================================================>]   9.56M  53.3MB/s    in 0.2s    
+
+2025-09-20 15:06:45 (53.3 MB/s) - ‘metazoa_6.txt’ saved [10026603/10026603]
+
+FINISHED --2025-09-20 15:06:45--
+Total wall clock time: 13s
+Downloaded: 6 files, 114M in 2.0s (57.0 MB/s)
+
+
