@@ -1,4 +1,9 @@
 #!/bin/bash
+
+set -ueo pipefail
+
+mkdir tcbshe
+cd tbcshe
  
 mkdir -p fungi metazoa plants protists vertebrae
 
