@@ -10,19 +10,19 @@
 
 wget -c https://raw.githubusercontent.com/bioinformer/GC123e/main/hdr.txt ;
 
-cat fungi_5.txt | awk '{print $1"\t"$13}' | tee fungi_6.txt ;
+cat fungi_step5.txt | awk '{print $1"\t"$13}' | tee fungi_6.txt ;
 cat hdr.txt fungi_6.txt | tee fungi_7.txt ;
 
-cat metazoa_5.txt | awk '{print $1"\t"$13}' | tee metazoa_6.txt ;
+cat metazoa_step5.txt | awk '{print $1"\t"$13}' | tee metazoa_6.txt ;
 cat hdr.txt metazoa_6.txt | tee metazoa_7.txt ;
 
-cat plants_5.txt | awk '{print $1"\t"$13}' | tee plants_6.txt ;
+cat plants_step5.txt | awk '{print $1"\t"$13}' | tee plants_6.txt ;
 cat hdr.txt plants_6.txt | tee plants_7.txt ;
 
-cat protists_5.txt | awk '{print $1"\t"$13}' | tee protists_6.txt ;
+cat protists_step5.txt | awk '{print $1"\t"$13}' | tee protists_6.txt ;
 cat hdr.txt protists_6.txt | tee protists_7.txt ;
 
-cat release_5.txt | awk '{print $1"\t"$13}' | tee release_6.txt ;
+cat release_step5.txt | awk '{print $1"\t"$13}' | tee release_6.txt ;
 cat hdr.txt release_6.txt | tee release_7.txt ;
 
 # $ wc -l *.txt
