@@ -8,6 +8,10 @@ wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fu
 
 wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{11..28}.txt
 
+cat fungi_*.txt | tee fungi_gc123.txt
+
+
+
 cd ../metazoa
 
 
