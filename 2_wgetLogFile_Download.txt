@@ -94,7 +94,7 @@ FINISHED --2025-09-20 12:52:09--
 Total wall clock time: 23s
 Downloaded: 9 files, 202M in 4.0s (50.0 MB/s)
 
-$ wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{11..28}.txt
+$ wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{10..28}.txt
 --2025-09-20 12:54:32--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_11.txt
 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.111.133, 185.199.110.133, ...
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
