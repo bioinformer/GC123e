@@ -428,5 +428,17 @@ plants_5new.txt                                    100%[========================
 
 2025-09-20 15:12:22 (70.8 MB/s) - ‘plants_5new.txt’ saved [21404302/21404302]
 
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_88.txt
+--2025-09-20 15:14:01--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_88.txt
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14824053 (14M) [text/plain]
+Saving to: ‘plants_88.txt’
+
+plants_88.txt                                      100%[===============================================================================================================>]  14.14M  72.2MB/s    in 0.2s    
+
+2025-09-20 15:14:02 (72.2 MB/s) - ‘plants_88.txt’ saved [14824053/14824053]
+
 
 
