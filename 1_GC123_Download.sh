@@ -10,6 +10,7 @@ cat fungi_*.txt | tee fungi_gc123.txt
 
 cd ../metazoa
 wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/metazoa_{1..6}.txt
+
 cat metazoa_*.txt | tee metazoa_gc123.txt
 
 cd ../plants
@@ -17,14 +18,19 @@ wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/pl
 wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_5new.txt
 wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_88.txt
 wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_{6..7}.txt
+
 cat plants_*.txt | tee plants_gc123.txt
 
 cd ../protists
 wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/protists_{1..9}.txt
 
+cat protists_*.txt | tee protists_gc123.txt
+
 cd ../vertebrae
 wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/vertebrae_{1..9}.txt
 wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/vertebrae_{10..11}.txt
+
+cat vertebrae_*.txt | tee vertebrae_gc123.txt
 
 
 # To RUN this Script, implement the 2 Commands below, preferably on Ubuntu 20.04 LTS Desktop Terminal 
