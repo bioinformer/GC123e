@@ -208,7 +208,18 @@ fungi_21.txt                                       100%[========================
 
 --2025-09-20 12:55:01--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_22.txt
 Reusing existing connection to raw.githubusercontent.com:443.
+HTTP request sent, awaiting response... 200 OKwget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_5new.txt
+--2025-09-20 15:12:20--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_5new.txt
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
+Length: 21404302 (20M) [text/plain]
+Saving to: ‘plants_5new.txt’
+
+plants_5new.txt                                    100%[===============================================================================================================>]  20.41M  70.8MB/s    in 0.3s    
+
+2025-09-20 15:12:22 (70.8 MB/s) - ‘plants_5new.txt’ saved [21404302/21404302]
+
 Length: 23963182 (23M) [text/plain]
 Saving to: ‘fungi_22.txt’
 
@@ -271,6 +282,17 @@ Reusing existing connection to raw.githubusercontent.com:443.
 HTTP request sent, awaiting response... 200 OK
 Length: 2973912 (2.8M) [text/plain]
 Saving to: ‘fungi_28.txt’
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_5new.txt
+--2025-09-20 15:12:20--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_5new.txt
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21404302 (20M) [text/plain]
+Saving to: ‘plants_5new.txt’
+
+plants_5new.txt                                    100%[===============================================================================================================>]  20.41M  70.8MB/s    in 0.3s    
+
+2025-09-20 15:12:22 (70.8 MB/s) - ‘plants_5new.txt’ saved [21404302/21404302]
 
 fungi_28.txt                                       100%[===============================================================================================================>]   2.84M  --.-KB/s    in 0.04s   
 
@@ -393,6 +415,18 @@ plants_4.txt                                       100%[========================
 FINISHED --2025-09-20 15:10:53--
 Total wall clock time: 9.9s
 Downloaded: 4 files, 85M in 2.2s (39.6 MB/s)
+
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_5new.txt
+--2025-09-20 15:12:20--  https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_5new.txt
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21404302 (20M) [text/plain]
+Saving to: ‘plants_5new.txt’
+
+plants_5new.txt                                    100%[===============================================================================================================>]  20.41M  70.8MB/s    in 0.3s    
+
+2025-09-20 15:12:22 (70.8 MB/s) - ‘plants_5new.txt’ saved [21404302/21404302]
 
 
 
