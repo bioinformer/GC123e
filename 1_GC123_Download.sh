@@ -6,14 +6,13 @@ cd ./fungi
 wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{1..9}.txt
 wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{11..28}.txt
 
-
-wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{1..9}.txt
-
-wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{11..28}.txt
-
 cat fungi_*.txt | tee fungi_gc123.txt
 
 cd ../metazoa
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/metazoa_{1..6}.txt
+cat metazoa_*.txt | tee metazoa_gc123.txt
+
+cd ../plants
 
 
 
