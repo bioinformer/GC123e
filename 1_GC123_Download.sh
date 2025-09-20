@@ -1,6 +1,16 @@
 #!/bin/bash
  
-wget -c http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_release_88.GCevobase.pc.download.GC4d.txt.gz ;
+mkdir -p fungi metazoa plants protists vertebrae
+
+cd ./fungi
+
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{1..9}.txt
+
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{11..28}.txt
+
+cd ../metazoa
+
+
 
 wget -c http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt.gz ;
 
