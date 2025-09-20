@@ -13,8 +13,13 @@ wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/me
 cat metazoa_*.txt | tee metazoa_gc123.txt
 
 cd ../plants
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_{1..4}.txt 
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_5new.txt
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_88.txt
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_{6..7}.txt
+cat plants_*.txt | tee plants_gc123.txt
 
-
+cd ../protists
 
 
 wget -c http://www.nextgenbioinformatics.org/GCevobase/download_data/Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt.gz ;
