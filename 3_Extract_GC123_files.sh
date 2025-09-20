@@ -4,7 +4,22 @@
 # $ pwd
 # ~/path/to/GC123e
 
-gunzip --keep Ensembl_Fungi_release_35.GCevobase.pc.download.GC4d.txt.gz ;
+mkdir -p fungi metazoa plants protists vertebrae
+
+cd ./fungi 
+
+
+cd ../metazoa
+
+
+cd ../plants
+
+cd ../protists
+
+cd ../vertebrae
+
+
+
 
 gunzip --keep Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt.gz ;
 
