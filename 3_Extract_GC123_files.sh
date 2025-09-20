@@ -4,31 +4,32 @@
 # $ pwd
 # ~/path/to/GC123e
 
+set -ueo pipefail
+
+mkdir tcbshe
+cd ./tcbshe
+
 mkdir -p fungi metazoa plants protists vertebrae
 
 cd ./fungi 
-
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{1..9}.txt
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/fungi_{10..28}.txt
 
 cd ../metazoa
-
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/metazoa_{1..6}.txt
 
 cd ../plants
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_{1..4}.txt
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_5new.txt
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_88.txt
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/plants_{6..7}.txt
 
 cd ../protists
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/protists_{1..9}.txt
 
 cd ../vertebrae
-
-
-
-
-gunzip --keep Ensembl_Metazoa_release_35.GCevobase.pc.download.GC4d.txt.gz ;
-
-gunzip --keep Ensembl_Plants_release_35.GCevobase.pc.fix.download.GC4d.txt.gz ;
-
-gunzip --keep Ensembl_Protists_release_35.GCevobase.pc.download.GC4d.txt.gz ;
-
-gunzip --keep Ensembl_release_88.GCevobase.pc.download.GC4d.txt.gz ;
-
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/vertebrae_{1..9}.txt
+wget -nc https://raw.githubusercontent.com/bioinformer/GC123e/refs/heads/main/vertebrae_{10..11}.txt
 
 # To RUN this Script, implement the 2 Commands below, preferably on Ubuntu 20.04 LTS Desktop Terminal 
 
