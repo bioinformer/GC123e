@@ -1,4 +1,4 @@
-#!/bin/bash1
+#!/bin/bash
 
 # ITERATION-1: Extract only GC1% , GC2% , GC3% and Exclude header-Line.
 cd ./tcbshe/plants
