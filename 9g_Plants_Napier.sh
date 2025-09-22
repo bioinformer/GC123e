@@ -1,4 +1,4 @@
-$ cat plants_7.txt | awk '$2 ~ /2.71828/' | tee plants_napier.txt
+cat plants_step5.txt | awk '$13 ~ /2.71828/' | tee plants_napier.txt
 
 Oryza_glumaepatula	2.71828
 Oryza_punctata	2.71828
