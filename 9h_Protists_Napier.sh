@@ -1,4 +1,4 @@
-$ cat protists_7.txt | awk '$2 ~ /2.71828/' | tee protists_napier.txt
+cat protists_step5.txt | awk '$13 ~ /2.71828/' | tee protists_napier.txt
 
 Angomonas_deanei	2.71828
 Aphanomyces_invadans	2.71828
