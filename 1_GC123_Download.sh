@@ -3,7 +3,7 @@
 set -ueo pipefail
 
 mkdir tcbshe
-cd tbcshe
+cd tcbshe
  
 mkdir -p fungi metazoa plants protists vertebrae
 
