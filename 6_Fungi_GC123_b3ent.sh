@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ueo pipefail
+
 # ITERATION-1: Extract only GC1% , GC2% , GC3% and Exclude header-Line.
 cd ./tcbshe/fungi
 cat fungi_gc123.txt | awk '{print $1,$7,$8,$9}' | grep -v "species_name" | tee fungi_step1.txt ;
