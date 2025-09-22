@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ITERATION-1: Extract only GC1% , GC2% , GC3% and Exclude header-Line.
-cd ../vertebrtae
+cd ./tcbshe/vertebrtae
 cat vertebrae_gc123.txt | awk '{print $1,$7,$8,$9}' | grep -v "species_name" | tee release_step1.txt ;
 
 # ITERATION-2: Normalize the GC1% , GC2% , GC3% (percentage Values) to [0,1] inBetween RANGE, by dividing by 100 each
