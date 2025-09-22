@@ -1,4 +1,4 @@
-$ cat release_7.txt | awk '$2 ~ /2.71828/' | tee vertebra_napier.txt
+cat release_step5.txt | awk '$13 ~ /2.71828/' | tee vertebrae_napier.txt
 
 Callithrix_jacchus	2.71828
 Felis_catus	2.71828
