@@ -1,4 +1,4 @@
-$ cat fungi_step5.txt | awk '$13 ~ /2.71828/' | tee fungi_napier.txt
+cat fungi_step5.txt | awk '$13 ~ /2.71828/' | tee fungi_napier.txt
 
 Allomyces_macrogynus_atcc_38327	2.71828
 Aureobasidium_namibiae_cbs_147_97	2.71828
