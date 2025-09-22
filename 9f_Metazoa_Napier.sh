@@ -1,4 +1,4 @@
-$ cat metazoa_7.txt | awk '$2 ~ /2.71828/' | tee metazoa_napier.txt
+cat metazoa_step5.txt | awk '$13 ~ /2.71828/' | tee metazoa_napier.txt
 
 Culex_quinquefasciatus	2.71828
 Drosophila_pseudoobscura	2.71828
